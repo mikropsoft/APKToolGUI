@@ -516,4 +516,31 @@
   <data name="ClearFrameworkPrompt" xml:space="preserve">
     <value>更改 Apktool 版本后需要清除框架缓存以避免意外错误。 你想现在清除它吗？</value>
   </data>
+  <data name="ClearTempFolder" xml:space="preserve">
+    <value>清除临时文件夹</value>
+  </data>
+  <data name="DeletingFolder" xml:space="preserve">
+    <value>正在删除文件夹: {0}</value>
+  </data>
+  <data name="DirectoryNotExist" xml:space="preserve">
+    <value>目录 "{0}" 不存在</value>
+  </data>
+  <data name="OpenComFolder" xml:space="preserve">
+    <value>打开编译输出文件夹</value>
+  </data>
+  <data name="OpenDecFolder" xml:space="preserve">
+    <value>打开反编译输出文件夹</value>
+  </data>
+  <data name="FixApktoolYml" xml:space="preserve">
+    <value>Apktool.yml 已修复</value>
+  </data>
+  <data name="CopyFileTo" xml:space="preserve">
+    <value>复制文件 "{0}" 到 "{1}"</value>
+  </data>
+  <data name="SplitApkNotFound" xml:space="preserve">
+    <value>未选择拆分的 APK</value>
+  </data>
+  <data name="CantDetectApkeditorVersion" xml:space="preserve">
+    <value>无法检测 APKEditor 版本</value>
+  </data>
 </root>
