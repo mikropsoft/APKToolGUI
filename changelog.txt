@@ -1,3 +1,8 @@
+3.3.1.2
+- Option to override ABI for ADB
+- Fixed Target SDK showing wrong API level
+- Target SDK will detect up to API level 35/Android 15
+
 3.3.1.1
 - Fixed buttons not ungraying after ADB installation
 - Fixed "Merge APK" button not greying out during the process
