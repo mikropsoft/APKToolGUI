@@ -294,8 +294,10 @@ namespace APKToolGUI
                     });
 
                     bool parsed = false;
+                    string signature = null;
                     await Task.Factory.StartNew(() =>
                     {
+                        signature = signapk.GetSignature(file);
                         aapt = new AaptParser();
                         parsed = aapt.Parse(file);
                     });
@@ -307,6 +309,7 @@ namespace APKToolGUI
                             apkIconPicBox.Image.Dispose();
                             apkIconPicBox.Image = null;
                         }
+                        sigTxtBox.Text = signature;
                         fileTxtBox.Text = aapt.ApkFile;
                         appTxtBox.Text = aapt.AppName;
                         packNameTxtBox.Text = aapt.PackageName;
@@ -337,7 +340,6 @@ namespace APKToolGUI
                                 apkIconPicBox.Image = BitmapUtils.LoadBitmap(icon);
                             }
                         }
-
                         DirectoryUtils.Delete(splitPath);
                     }
                 }

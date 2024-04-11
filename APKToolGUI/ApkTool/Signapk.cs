@@ -3,6 +3,7 @@ using Java;
 using System.Diagnostics;
 using APKToolGUI.Properties;
 using APKToolGUI.Utils;
+using System.IO.Packaging;
 
 namespace APKToolGUI
 {
@@ -137,6 +138,19 @@ namespace APKToolGUI
             CancelOutputRead();
             CancelErrorRead();
             return ExitCode;
+        }
+
+        public string GetSignature(string apkFile)
+        {
+            using (JarProcess apktoolJar = new JarProcess(JavaPath, JarPath))
+            {
+                apktoolJar.EnableRaisingEvents = false;
+                apktoolJar.Start($"verify --print-certs \"{apkFile}\"");
+                string version = apktoolJar.StandardOutput.ReadToEnd();
+                version += apktoolJar.StandardError.ReadToEnd();
+                apktoolJar.WaitForExit();
+                return version;
+            }
         }
     }
 

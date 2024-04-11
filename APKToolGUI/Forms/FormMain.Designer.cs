@@ -64,7 +64,6 @@
             this.tabPageApkInfo = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.basicInfoTabPage = new System.Windows.Forms.TabPage();
-            this.label34 = new System.Windows.Forms.Label();
             this.launchActivityTxtBox = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.archSdkTxtBox = new System.Windows.Forms.TextBox();
@@ -264,6 +263,8 @@
             this.overrideAbiCheckBox = new System.Windows.Forms.CheckBox();
             this.setVendorChkBox = new System.Windows.Forms.CheckBox();
             this.apkPathAdbTxtBox = new System.Windows.Forms.TextBox();
+            this.sigTxtBox = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tabControlMain.SuspendLayout();
             this.tabPageMain.SuspendLayout();
             this.mergePanel.SuspendLayout();
@@ -552,7 +553,8 @@
             // 
             this.basicInfoTabPage.AllowDrop = true;
             resources.ApplyResources(this.basicInfoTabPage, "basicInfoTabPage");
-            this.basicInfoTabPage.Controls.Add(this.label34);
+            this.basicInfoTabPage.Controls.Add(this.sigTxtBox);
+            this.basicInfoTabPage.Controls.Add(this.label5);
             this.basicInfoTabPage.Controls.Add(this.launchActivityTxtBox);
             this.basicInfoTabPage.Controls.Add(this.label31);
             this.basicInfoTabPage.Controls.Add(this.archSdkTxtBox);
@@ -593,11 +595,6 @@
             this.basicInfoTabPage.Controls.Add(this.label12);
             this.basicInfoTabPage.Name = "basicInfoTabPage";
             this.basicInfoTabPage.UseVisualStyleBackColor = true;
-            // 
-            // label34
-            // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
             // 
             // launchActivityTxtBox
             // 
@@ -1218,13 +1215,13 @@
             // 
             this.tabPageAdb.AllowDrop = true;
             this.tabPageAdb.Controls.Add(this.overrideAbiComboBox);
-            this.tabPageAdb.Controls.Add(this.overrideAbiCheckBox);
             this.tabPageAdb.Controls.Add(this.selAdbDeviceLbl);
             this.tabPageAdb.Controls.Add(this.label33);
             this.tabPageAdb.Controls.Add(this.killAdbBtn);
             this.tabPageAdb.Controls.Add(this.installApkBtn);
             this.tabPageAdb.Controls.Add(this.refreshDevicesBtn);
             this.tabPageAdb.Controls.Add(this.selApkAdbBtn);
+            this.tabPageAdb.Controls.Add(this.overrideAbiCheckBox);
             this.tabPageAdb.Controls.Add(this.setVendorChkBox);
             this.tabPageAdb.Controls.Add(this.apkPathAdbTxtBox);
             this.tabPageAdb.Controls.Add(this.label32);
@@ -2103,6 +2100,17 @@
             this.apkPathAdbTxtBox.Name = "apkPathAdbTxtBox";
             this.apkPathAdbTxtBox.Text = global::APKToolGUI.Properties.Settings.Default.Adb_SelectedApkPath;
             // 
+            // sigTxtBox
+            // 
+            resources.ApplyResources(this.sigTxtBox, "sigTxtBox");
+            this.sigTxtBox.Name = "sigTxtBox";
+            this.sigTxtBox.ReadOnly = true;
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
             // FormMain
             // 
             this.AllowDrop = true;
@@ -2396,7 +2404,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem clearTempFolderToolStripMenuItem;
         internal System.Windows.Forms.CheckBox checkBox_BUILD_NetSecConf;
-        internal System.Windows.Forms.Label label34;
         private System.Windows.Forms.CheckBox checkBox7;
         internal System.Windows.Forms.ToolStripMenuItem newInsToolStripMenuItem;
         internal System.Windows.Forms.Panel mergePanel;
@@ -2409,6 +2416,8 @@
         internal System.Windows.Forms.ToolStripMenuItem useAPKEditorForDecompilingItem;
         internal System.Windows.Forms.CheckBox overrideAbiCheckBox;
         internal System.Windows.Forms.ComboBox overrideAbiComboBox;
+        internal System.Windows.Forms.RichTextBox sigTxtBox;
+        internal System.Windows.Forms.Label label5;
     }
 }
 
