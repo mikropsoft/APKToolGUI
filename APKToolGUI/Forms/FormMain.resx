@@ -121,9 +121,6 @@
   <data name="tabControlMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="mergePanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="splitApkTxt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -163,7 +160,7 @@
     <value>4, 20</value>
   </data>
   <data name="splitApkPathTxtBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 22</value>
+    <value>442, 22</value>
   </data>
   <data name="splitApkPathTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -190,7 +187,7 @@
     <value>NoControl</value>
   </data>
   <data name="selSplitApkBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 19</value>
+    <value>452, 18</value>
   </data>
   <data name="selSplitApkBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -223,7 +220,7 @@
     <value>NoControl</value>
   </data>
   <data name="mergeApkBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 19</value>
+    <value>485, 18</value>
   </data>
   <data name="mergeApkBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 24</value>
@@ -246,11 +243,14 @@
   <data name="&gt;&gt;mergeApkBtn.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="mergePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="mergePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 176</value>
+    <value>0, 180</value>
   </data>
   <data name="mergePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 45</value>
+    <value>595, 45</value>
   </data>
   <data name="mergePanel.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -274,7 +274,7 @@
     <value>NoControl</value>
   </data>
   <data name="comApkOpenDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 253</value>
+    <value>211, 255</value>
   </data>
   <data name="comApkOpenDir.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -304,7 +304,7 @@
     <value>NoControl</value>
   </data>
   <data name="decOutOpenDirBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 225</value>
+    <value>6, 227</value>
   </data>
   <data name="decOutOpenDirBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -334,7 +334,7 @@
     <value>NoControl</value>
   </data>
   <data name="signApkOpenDirBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 253</value>
+    <value>414, 255</value>
   </data>
   <data name="signApkOpenDirBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -364,7 +364,7 @@
     <value>NoControl</value>
   </data>
   <data name="alignApkOpenDirBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 225</value>
+    <value>414, 227</value>
   </data>
   <data name="alignApkOpenDirBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -394,7 +394,7 @@
     <value>NoControl</value>
   </data>
   <data name="decApkOpenDirBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 225</value>
+    <value>211, 227</value>
   </data>
   <data name="decApkOpenDirBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -424,7 +424,7 @@
     <value>NoControl</value>
   </data>
   <data name="compileOutputOpenDirBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 253</value>
+    <value>6, 255</value>
   </data>
   <data name="compileOutputOpenDirBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -451,7 +451,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_OpenMainActivity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 281</value>
+    <value>414, 283</value>
   </data>
   <data name="button_OpenMainActivity.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -478,7 +478,7 @@
     <value>NoControl</value>
   </data>
   <data name="openApktoolYmlBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 281</value>
+    <value>211, 283</value>
   </data>
   <data name="openApktoolYmlBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -505,7 +505,7 @@
     <value>NoControl</value>
   </data>
   <data name="openAndroidMainfestBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 281</value>
+    <value>6, 283</value>
   </data>
   <data name="openAndroidMainfestBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 24</value>
@@ -527,9 +527,6 @@
   </data>
   <data name="&gt;&gt;openAndroidMainfestBtn.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="signPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -568,7 +565,7 @@
     <value>4, 20</value>
   </data>
   <data name="textBox_SIGN_InputFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 22</value>
+    <value>442, 22</value>
   </data>
   <data name="textBox_SIGN_InputFile.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -595,7 +592,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_SIGN_BrowseInputFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 19</value>
+    <value>452, 18</value>
   </data>
   <data name="button_SIGN_BrowseInputFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -628,7 +625,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_SIGN_Sign.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 19</value>
+    <value>485, 18</value>
   </data>
   <data name="button_SIGN_Sign.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 24</value>
@@ -651,11 +648,14 @@
   <data name="&gt;&gt;button_SIGN_Sign.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="signPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="signPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 132</value>
+    <value>0, 135</value>
   </data>
   <data name="signPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 45</value>
+    <value>595, 45</value>
   </data>
   <data name="signPanel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -671,9 +671,6 @@
   </data>
   <data name="&gt;&gt;signPanel.ZOrder" xml:space="preserve">
     <value>10</value>
-  </data>
-  <data name="zipalignPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -715,7 +712,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_ZIPALIGN_Align.Location" type="System.Drawing.Point, System.Drawing">
-    <value>494, 19</value>
+    <value>485, 18</value>
   </data>
   <data name="button_ZIPALIGN_Align.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 24</value>
@@ -748,7 +745,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_ZIPALIGN_BrowseInputFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>461, 19</value>
+    <value>452, 18</value>
   </data>
   <data name="button_ZIPALIGN_BrowseInputFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -778,7 +775,7 @@
     <value>3, 20</value>
   </data>
   <data name="textBox_ZIPALIGN_InputFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>454, 22</value>
+    <value>444, 22</value>
   </data>
   <data name="textBox_ZIPALIGN_InputFile.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -795,11 +792,14 @@
   <data name="&gt;&gt;textBox_ZIPALIGN_InputFile.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="zipalignPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="zipalignPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 88</value>
+    <value>0, 90</value>
   </data>
   <data name="zipalignPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 45</value>
+    <value>595, 45</value>
   </data>
   <data name="zipalignPanel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -815,9 +815,6 @@
   </data>
   <data name="&gt;&gt;zipalignPanel.ZOrder" xml:space="preserve">
     <value>11</value>
-  </data>
-  <data name="comPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -859,7 +856,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_BUILD_BrowseInputProjectDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 18</value>
+    <value>452, 18</value>
   </data>
   <data name="button_BUILD_BrowseInputProjectDir.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -892,7 +889,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_BUILD_Build.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 18</value>
+    <value>485, 18</value>
   </data>
   <data name="button_BUILD_Build.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 24</value>
@@ -922,7 +919,7 @@
     <value>4, 19</value>
   </data>
   <data name="textBox_BUILD_InputProjectDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 22</value>
+    <value>443, 22</value>
   </data>
   <data name="textBox_BUILD_InputProjectDir.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -939,11 +936,14 @@
   <data name="&gt;&gt;textBox_BUILD_InputProjectDir.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="comPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="comPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 44</value>
+    <value>0, 45</value>
   </data>
   <data name="comPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 45</value>
+    <value>595, 45</value>
   </data>
   <data name="comPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -959,9 +959,6 @@
   </data>
   <data name="&gt;&gt;comPanel.ZOrder" xml:space="preserve">
     <value>12</value>
-  </data>
-  <data name="decPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1000,7 +997,7 @@
     <value>3, 19</value>
   </data>
   <data name="textBox_DECODE_InputAppPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>454, 22</value>
+    <value>444, 22</value>
   </data>
   <data name="textBox_DECODE_InputAppPath.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1027,7 +1024,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_DECODE_Decode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>494, 18</value>
+    <value>485, 18</value>
   </data>
   <data name="button_DECODE_Decode.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 24</value>
@@ -1060,7 +1057,7 @@
     <value>NoControl</value>
   </data>
   <data name="button_DECODE_BrowseInputAppPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>461, 18</value>
+    <value>452, 18</value>
   </data>
   <data name="button_DECODE_BrowseInputAppPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -1083,11 +1080,14 @@
   <data name="&gt;&gt;button_DECODE_BrowseInputAppPath.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="decPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="decPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="decPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 45</value>
+    <value>595, 45</value>
   </data>
   <data name="decPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1108,7 +1108,7 @@
     <value>4, 27</value>
   </data>
   <data name="tabPageMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageMain.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2203,7 +2203,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="basicInfoTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>594, 278</value>
+    <value>587, 278</value>
   </data>
   <data name="basicInfoTabPage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2230,7 +2230,7 @@
     <value>3, 3</value>
   </data>
   <data name="fullInfoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 272</value>
+    <value>581, 272</value>
   </data>
   <data name="fullInfoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2257,7 +2257,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>594, 278</value>
+    <value>587, 278</value>
   </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2290,7 +2290,7 @@
     <value>122, 3</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2311,7 +2311,7 @@
     <value>4, 27</value>
   </data>
   <data name="tabPageApkInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageApkInfo.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2364,11 +2364,8 @@
   <data name="&gt;&gt;checkBox7.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="decApiLvlUpDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="decApiLvlUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 18</value>
+    <value>491, 18</value>
   </data>
   <data name="decApiLvlUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 22</value>
@@ -2488,16 +2485,16 @@
     <value>4</value>
   </data>
   <data name="textBox_DECODE_FrameDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Top, Left, Right</value>
   </data>
   <data name="textBox_DECODE_FrameDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 165</value>
+    <value>282, 165</value>
   </data>
   <data name="textBox_DECODE_FrameDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_DECODE_FrameDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 22</value>
+    <value>237, 22</value>
   </data>
   <data name="textBox_DECODE_FrameDir.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2521,13 +2518,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_DECODE_BrowseOutputDirectory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 190</value>
+    <value>523, 190</value>
   </data>
   <data name="button_DECODE_BrowseOutputDirectory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_DECODE_BrowseOutputDirectory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_DECODE_BrowseOutputDirectory.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2584,13 +2581,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_DECODE_BrowseFrameDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 164</value>
+    <value>523, 164</value>
   </data>
   <data name="button_DECODE_BrowseFrameDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_DECODE_BrowseFrameDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_DECODE_BrowseFrameDir.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2671,16 +2668,16 @@
     <value>10</value>
   </data>
   <data name="textBox_DECODE_OutputDirectory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Top, Left, Right</value>
   </data>
   <data name="textBox_DECODE_OutputDirectory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 191</value>
+    <value>282, 191</value>
   </data>
   <data name="textBox_DECODE_OutputDirectory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_DECODE_OutputDirectory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 22</value>
+    <value>237, 22</value>
   </data>
   <data name="textBox_DECODE_OutputDirectory.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2847,11 +2844,14 @@
   <data name="&gt;&gt;checkBox_DECODE_NoDebugInfo.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="groupBox_DECODE_Options.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="groupBox_DECODE_Options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 3</value>
+    <value>3, 3</value>
   </data>
   <data name="groupBox_DECODE_Options.Size" type="System.Drawing.Size, System.Drawing">
-    <value>573, 379</value>
+    <value>572, 379</value>
   </data>
   <data name="groupBox_DECODE_Options.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2878,7 +2878,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageDecode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageDecode.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3135,17 +3135,20 @@
   <data name="&gt;&gt;checkBox_BUILD_NoCrunch.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="button_BUILD_BrowseOutputAppPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="button_BUILD_BrowseOutputAppPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button_BUILD_BrowseOutputAppPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 118</value>
+    <value>525, 118</value>
   </data>
   <data name="button_BUILD_BrowseOutputAppPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_BUILD_BrowseOutputAppPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_BUILD_BrowseOutputAppPath.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -3195,17 +3198,20 @@
   <data name="&gt;&gt;checkBox_BUILD_ForceAll.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="button_BUILD_BrowseFrameDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="button_BUILD_BrowseFrameDir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button_BUILD_BrowseFrameDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 92</value>
+    <value>525, 92</value>
   </data>
   <data name="button_BUILD_BrowseFrameDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_BUILD_BrowseFrameDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_BUILD_BrowseFrameDir.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -3225,17 +3231,20 @@
   <data name="&gt;&gt;button_BUILD_BrowseFrameDir.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="button_BUILD_BrowseAaptPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="button_BUILD_BrowseAaptPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button_BUILD_BrowseAaptPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 66</value>
+    <value>525, 66</value>
   </data>
   <data name="button_BUILD_BrowseAaptPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_BUILD_BrowseAaptPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_BUILD_BrowseAaptPath.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3318,14 +3327,17 @@
   <data name="&gt;&gt;checkBox_BUILD_CopyOriginal.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="textBox_BUILD_OutputAppPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_BUILD_OutputAppPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 119</value>
+    <value>287, 119</value>
   </data>
   <data name="textBox_BUILD_OutputAppPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_BUILD_OutputAppPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 22</value>
+    <value>233, 22</value>
   </data>
   <data name="textBox_BUILD_OutputAppPath.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3372,14 +3384,17 @@
   <data name="&gt;&gt;checkBox_BUILD_UseAapt.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="textBox_BUILD_AaptPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_BUILD_AaptPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 67</value>
+    <value>287, 67</value>
   </data>
   <data name="textBox_BUILD_AaptPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_BUILD_AaptPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 22</value>
+    <value>233, 22</value>
   </data>
   <data name="textBox_BUILD_AaptPath.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3396,14 +3411,17 @@
   <data name="&gt;&gt;textBox_BUILD_AaptPath.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="textBox_BUILD_FrameDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_BUILD_FrameDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 93</value>
+    <value>287, 93</value>
   </data>
   <data name="textBox_BUILD_FrameDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_BUILD_FrameDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 22</value>
+    <value>233, 22</value>
   </data>
   <data name="textBox_BUILD_FrameDir.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3450,11 +3468,14 @@
   <data name="&gt;&gt;checkBox_BUILD_UseFramework.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <data name="groupBox_BUILD_Options.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="groupBox_BUILD_Options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 3</value>
+    <value>0, 0</value>
   </data>
   <data name="groupBox_BUILD_Options.Size" type="System.Drawing.Size, System.Drawing">
-    <value>573, 358</value>
+    <value>578, 358</value>
   </data>
   <data name="groupBox_BUILD_Options.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -3478,7 +3499,7 @@
     <value>4, 27</value>
   </data>
   <data name="tabPageBuild.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageBuild.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3831,6 +3852,9 @@
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="textBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 191</value>
   </data>
@@ -3852,17 +3876,20 @@
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="selectKeyStoreFileBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="selectKeyStoreFileBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="selectKeyStoreFileBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>530, 162</value>
+    <value>518, 163</value>
   </data>
   <data name="selectKeyStoreFileBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="selectKeyStoreFileBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="selectKeyStoreFileBtn.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -3881,6 +3908,9 @@
   </data>
   <data name="&gt;&gt;selectKeyStoreFileBtn.ZOrder" xml:space="preserve">
     <value>12</value>
+  </data>
+  <data name="aliasTxtBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="aliasTxtBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 109</value>
@@ -3960,11 +3990,14 @@
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="keyStoreFileTxtBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="keyStoreFileTxtBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 163</value>
   </data>
   <data name="keyStoreFileTxtBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 22</value>
+    <value>248, 22</value>
   </data>
   <data name="keyStoreFileTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -4185,17 +4218,20 @@
   <data name="&gt;&gt;label_SIGN_PublicKey.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
+  <data name="button_SIGN_BrowseOutputFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="button_SIGN_BrowseOutputFile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button_SIGN_BrowseOutputFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>530, 218</value>
+    <value>518, 219</value>
   </data>
   <data name="button_SIGN_BrowseOutputFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_SIGN_BrowseOutputFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_SIGN_BrowseOutputFile.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4215,6 +4251,9 @@
   <data name="&gt;&gt;button_SIGN_BrowseOutputFile.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="textBox_SIGN_OutputFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_SIGN_OutputFile.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 219</value>
   </data>
@@ -4222,7 +4261,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_SIGN_OutputFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 22</value>
+    <value>248, 22</value>
   </data>
   <data name="textBox_SIGN_OutputFile.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4239,17 +4278,20 @@
   <data name="&gt;&gt;textBox_SIGN_OutputFile.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
+  <data name="button_SIGN_BrowsePublicKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="button_SIGN_BrowsePublicKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button_SIGN_BrowsePublicKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>530, 52</value>
+    <value>518, 53</value>
   </data>
   <data name="button_SIGN_BrowsePublicKey.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_SIGN_BrowsePublicKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_SIGN_BrowsePublicKey.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4269,17 +4311,20 @@
   <data name="&gt;&gt;button_SIGN_BrowsePublicKey.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
+  <data name="button_SIGN_BrowsePrivateKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="button_SIGN_BrowsePrivateKey.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button_SIGN_BrowsePrivateKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>530, 79</value>
+    <value>518, 80</value>
   </data>
   <data name="button_SIGN_BrowsePrivateKey.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_SIGN_BrowsePrivateKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_SIGN_BrowsePrivateKey.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4299,6 +4344,9 @@
   <data name="&gt;&gt;button_SIGN_BrowsePrivateKey.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
+  <data name="textBox_SIGN_PublicKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_SIGN_PublicKey.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 53</value>
   </data>
@@ -4306,7 +4354,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_SIGN_PublicKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 22</value>
+    <value>250, 22</value>
   </data>
   <data name="textBox_SIGN_PublicKey.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4323,6 +4371,9 @@
   <data name="&gt;&gt;textBox_SIGN_PublicKey.ZOrder" xml:space="preserve">
     <value>27</value>
   </data>
+  <data name="textBox_SIGN_PrivateKey.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_SIGN_PrivateKey.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 80</value>
   </data>
@@ -4330,7 +4381,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_SIGN_PrivateKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 22</value>
+    <value>250, 22</value>
   </data>
   <data name="textBox_SIGN_PrivateKey.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4347,11 +4398,14 @@
   <data name="&gt;&gt;textBox_SIGN_PrivateKey.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
+  <data name="groupBox_SIGN_Options.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="groupBox_SIGN_Options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 3</value>
+    <value>3, 3</value>
   </data>
   <data name="groupBox_SIGN_Options.Size" type="System.Drawing.Size, System.Drawing">
-    <value>573, 419</value>
+    <value>572, 419</value>
   </data>
   <data name="groupBox_SIGN_Options.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -4378,7 +4432,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageSign.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageSign.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4400,9 +4454,6 @@
   </data>
   <data name="tabPageZipAlign.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="groupBox_ZIPALIGN_Options.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="zipalignOutputDirChkBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4534,13 +4585,13 @@
     <value>NoControl</value>
   </data>
   <data name="button_ZIPALIGN_BrowseOutputFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>552, 164</value>
+    <value>542, 164</value>
   </data>
   <data name="button_ZIPALIGN_BrowseOutputFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_ZIPALIGN_BrowseOutputFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_ZIPALIGN_BrowseOutputFile.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4590,6 +4641,9 @@
   <data name="&gt;&gt;checkBox_ZIPALIGN_CheckAlignment.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="textBox_ZIPALIGN_OutputFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_ZIPALIGN_OutputFile.Location" type="System.Drawing.Point, System.Drawing">
     <value>297, 165</value>
   </data>
@@ -4597,7 +4651,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_ZIPALIGN_OutputFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 22</value>
+    <value>240, 22</value>
   </data>
   <data name="textBox_ZIPALIGN_OutputFile.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4701,11 +4755,14 @@
   <data name="&gt;&gt;checkBox_ZIPALIGN_OverwriteOutputFile.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="groupBox_ZIPALIGN_Options.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="groupBox_ZIPALIGN_Options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
+    <value>3, 3</value>
   </data>
   <data name="groupBox_ZIPALIGN_Options.Size" type="System.Drawing.Size, System.Drawing">
-    <value>592, 299</value>
+    <value>589, 299</value>
   </data>
   <data name="groupBox_ZIPALIGN_Options.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -4732,7 +4789,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageZipAlign.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageZipAlign.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -4751,9 +4808,6 @@
   </data>
   <data name="&gt;&gt;tabPageZipAlign.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="openFwFolderBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4839,8 +4893,11 @@
   <data name="&gt;&gt;clearFwBeforeDecodeChkBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 125</value>
+    <value>0, 115</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>595, 157</value>
@@ -4862,9 +4919,6 @@
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="groupBox_IF_Options.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="checkBox_IF_Tag.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4926,6 +4980,9 @@
   <data name="&gt;&gt;checkBox_IF_FramePath.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="textBox_IF_Tag.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_IF_Tag.Location" type="System.Drawing.Point, System.Drawing">
     <value>301, 42</value>
   </data>
@@ -4933,7 +4990,7 @@
     <value>1, 1, 3, 1</value>
   </data>
   <data name="textBox_IF_Tag.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 22</value>
+    <value>288, 22</value>
   </data>
   <data name="textBox_IF_Tag.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4983,17 +5040,20 @@
   <data name="&gt;&gt;button_IF_InstallFramework.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="button_IF_BrowseFrameDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="button_IF_BrowseFrameDir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button_IF_BrowseFrameDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 15</value>
+    <value>551, 15</value>
   </data>
   <data name="button_IF_BrowseFrameDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="button_IF_BrowseFrameDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="button_IF_BrowseFrameDir.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -5070,6 +5130,9 @@
   <data name="&gt;&gt;textBox_IF_InputFramePath.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="textBox_IF_FrameDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBox_IF_FrameDir.Location" type="System.Drawing.Point, System.Drawing">
     <value>301, 16</value>
   </data>
@@ -5077,7 +5140,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="textBox_IF_FrameDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 22</value>
+    <value>247, 22</value>
   </data>
   <data name="textBox_IF_FrameDir.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -5094,8 +5157,11 @@
   <data name="&gt;&gt;textBox_IF_FrameDir.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="groupBox_IF_Options.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="groupBox_IF_Options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
+    <value>0, 0</value>
   </data>
   <data name="groupBox_IF_Options.Size" type="System.Drawing.Size, System.Drawing">
     <value>595, 115</value>
@@ -5122,7 +5188,7 @@
     <value>4, 27</value>
   </data>
   <data name="tabPageInstallFramework.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageInstallFramework.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5141,9 +5207,6 @@
   </data>
   <data name="&gt;&gt;tabPageInstallFramework.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="smaliGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5215,7 +5278,7 @@
     <value>NoControl</value>
   </data>
   <data name="comSmaliBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 89</value>
+    <value>480, 89</value>
   </data>
   <data name="comSmaliBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 24</value>
@@ -5238,17 +5301,20 @@
   <data name="&gt;&gt;comSmaliBtn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="smaliBrowseOutputBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="smaliBrowseOutputBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="smaliBrowseOutputBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 14</value>
+    <value>545, 14</value>
   </data>
   <data name="smaliBrowseOutputBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="smaliBrowseOutputBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="smaliBrowseOutputBtn.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -5275,7 +5341,7 @@
     <value>6, 90</value>
   </data>
   <data name="smaliBrowseInputDirTxtBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>438, 22</value>
+    <value>437, 22</value>
   </data>
   <data name="smaliBrowseInputDirTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -5292,14 +5358,17 @@
   <data name="&gt;&gt;smaliBrowseInputDirTxtBox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="smaliBrowseOutputTxtBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="smaliBrowseOutputTxtBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 15</value>
+    <value>282, 15</value>
   </data>
   <data name="smaliBrowseOutputTxtBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="smaliBrowseOutputTxtBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 22</value>
+    <value>259, 22</value>
   </data>
   <data name="smaliBrowseOutputTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -5326,7 +5395,7 @@
     <value>NoControl</value>
   </data>
   <data name="smaliBrowseInputDirBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 89</value>
+    <value>447, 89</value>
   </data>
   <data name="smaliBrowseInputDirBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 24</value>
@@ -5349,11 +5418,14 @@
   <data name="&gt;&gt;smaliBrowseInputDirBtn.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="smaliGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="smaliGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 134</value>
+    <value>3, 123</value>
   </data>
   <data name="smaliGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 120</value>
+    <value>589, 120</value>
   </data>
   <data name="smaliGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5372,9 +5444,6 @@
   </data>
   <data name="&gt;&gt;smaliGroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="bakSmaliGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5436,17 +5505,20 @@
   <data name="&gt;&gt;baksmaliUseOutputChkBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="baksmaliBrowseOutputBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="baksmaliBrowseOutputBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="baksmaliBrowseOutputBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 14</value>
+    <value>545, 13</value>
   </data>
   <data name="baksmaliBrowseOutputBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 1</value>
   </data>
   <data name="baksmaliBrowseOutputBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="baksmaliBrowseOutputBtn.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -5466,14 +5538,17 @@
   <data name="&gt;&gt;baksmaliBrowseOutputBtn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="baksmaliBrowseOutputTxtBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="baksmaliBrowseOutputTxtBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 15</value>
+    <value>282, 14</value>
   </data>
   <data name="baksmaliBrowseOutputTxtBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="baksmaliBrowseOutputTxtBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 22</value>
+    <value>259, 22</value>
   </data>
   <data name="baksmaliBrowseOutputTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -5500,7 +5575,7 @@
     <value>NoControl</value>
   </data>
   <data name="decSmaliBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 90</value>
+    <value>478, 90</value>
   </data>
   <data name="decSmaliBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 24</value>
@@ -5533,7 +5608,7 @@
     <value>NoControl</value>
   </data>
   <data name="baksmaliBrowseInputDexBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 90</value>
+    <value>445, 90</value>
   </data>
   <data name="baksmaliBrowseInputDexBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 24</value>
@@ -5563,7 +5638,7 @@
     <value>4, 91</value>
   </data>
   <data name="baksmaliBrowseInputDexTxtBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>438, 22</value>
+    <value>437, 22</value>
   </data>
   <data name="baksmaliBrowseInputDexTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -5580,11 +5655,14 @@
   <data name="&gt;&gt;baksmaliBrowseInputDexTxtBox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="bakSmaliGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="bakSmaliGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>3, 3</value>
   </data>
   <data name="bakSmaliGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>590, 120</value>
+    <value>589, 120</value>
   </data>
   <data name="bakSmaliGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5611,7 +5689,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageBaksmali.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageBaksmali.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -5749,16 +5827,16 @@
     <value>3</value>
   </data>
   <data name="installApkBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+    <value>Top, Right</value>
   </data>
   <data name="installApkBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="installApkBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 101</value>
+    <value>427, 101</value>
   </data>
   <data name="installApkBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
+    <value>166, 23</value>
   </data>
   <data name="installApkBtn.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -5815,10 +5893,10 @@
     <value>NoControl</value>
   </data>
   <data name="selApkAdbBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 71</value>
+    <value>553, 71</value>
   </data>
   <data name="selApkAdbBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 24</value>
+    <value>40, 24</value>
   </data>
   <data name="selApkAdbBtn.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -5899,13 +5977,13 @@
     <value>8</value>
   </data>
   <data name="apkPathAdbTxtBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Top, Left, Right</value>
   </data>
   <data name="apkPathAdbTxtBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 72</value>
+    <value>224, 72</value>
   </data>
   <data name="apkPathAdbTxtBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 22</value>
+    <value>324, 22</value>
   </data>
   <data name="apkPathAdbTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5959,7 +6037,7 @@
     <value>7, 130</value>
   </data>
   <data name="devicesListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 173</value>
+    <value>619, 173</value>
   </data>
   <data name="devicesListBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5983,7 +6061,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPageAdb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>602, 309</value>
+    <value>595, 309</value>
   </data>
   <data name="tabPageAdb.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -6007,13 +6085,13 @@
     <value>48, 23</value>
   </data>
   <data name="tabControlMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
+    <value>-1, 24</value>
   </data>
   <data name="tabControlMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="tabControlMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>610, 340</value>
+    <value>603, 340</value>
   </data>
   <data name="tabControlMain.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -6285,7 +6363,7 @@
     <value>None</value>
   </data>
   <data name="toolStripStatusLabelStateText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>594, 17</value>
+    <value>587, 17</value>
   </data>
   <data name="toolStripStatusLabelStateText.Text" xml:space="preserve">
     <value>Loading...</value>
@@ -6306,7 +6384,7 @@
     <value>0, 542</value>
   </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>609, 22</value>
+    <value>602, 22</value>
   </data>
   <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -6360,7 +6438,7 @@
     <value>0, 363</value>
   </data>
   <data name="logTxtBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>606, 179</value>
+    <value>599, 179</value>
   </data>
   <data name="logTxtBox.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -6486,7 +6564,7 @@
     <value>3, 2, 0, 2</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>609, 24</value>
+    <value>602, 24</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -6516,7 +6594,7 @@
     <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>609, 564</value>
+    <value>602, 564</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>
@@ -8187,9 +8265,6 @@
         //////////w4AAAcP///////
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>99, 97</value>
   </data>
@@ -8280,6 +8355,12 @@
   <data name="&gt;&gt;settingsToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;useAPKEditorForDecompilingItem.Name" xml:space="preserve">
+    <value>useAPKEditorForDecompilingItem</value>
+  </data>
+  <data name="&gt;&gt;useAPKEditorForDecompilingItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;settingsToolStripMenuItem.Name" xml:space="preserve">
     <value>settingsToolStripMenuItem</value>
   </data>
@@ -8327,12 +8408,6 @@
   </data>
   <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;useAPKEditorForDecompilingItem.Name" xml:space="preserve">
-    <value>useAPKEditorForDecompilingItem</value>
-  </data>
-  <data name="&gt;&gt;useAPKEditorForDecompilingItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormMain</value>
