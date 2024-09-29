@@ -20,6 +20,7 @@ namespace APKToolGUI.Handlers
         private static FormMain main;
 
         string[] apks = { ".apk", ".xapk", ".zip", ".apks", ".apkm" };
+        string[] apk = { ".apk" };
 
         public DragDropHandlers(FormMain Main)
         {
@@ -37,17 +38,17 @@ namespace APKToolGUI.Handlers
             Register(main.button_BUILD_Build, main.comPanel, comEventHandler, null);
 
             DragEventHandler alignEventHandler = new DragEventHandler((sender, e) => { DropApkToAlign(e); });
-            Register(main.zipalignPanel, null, alignEventHandler, apks);
-            Register(main.textBox_ZIPALIGN_InputFile, main.zipalignPanel, alignEventHandler, apks);
-            Register(main.button_ZIPALIGN_Align, main.zipalignPanel, alignEventHandler, apks);
+            Register(main.zipalignPanel, null, alignEventHandler, apk);
+            Register(main.textBox_ZIPALIGN_InputFile, main.zipalignPanel, alignEventHandler, apk);
+            Register(main.button_ZIPALIGN_Align, main.zipalignPanel, alignEventHandler, apk);
 
             DragEventHandler signEventHandler = new DragEventHandler((sender, e) => { DropApkToSign(e); });
-            Register(main.signPanel, null, signEventHandler, apks);
-            Register(main.textBox_SIGN_InputFile, main.signPanel, signEventHandler, apks);
-            Register(main.button_SIGN_Sign, main.signPanel, signEventHandler, apks);
+            Register(main.signPanel, null, signEventHandler, apk);
+            Register(main.textBox_SIGN_InputFile, main.signPanel, signEventHandler, apk);
+            Register(main.button_SIGN_Sign, main.signPanel, signEventHandler, apk);
 
             DragEventHandler mergeEventHandler = new DragEventHandler((sender, e) => { DropApkToMerge(e); });
-            Register(main.splitApkTxt, null, signEventHandler, apks);
+            Register(main.mergePanel, null, mergeEventHandler, apks);
             Register(main.splitApkPathTxtBox, main.mergePanel, mergeEventHandler, apks);
             Register(main.mergeApkBtn, main.mergePanel, mergeEventHandler, apks);
 
@@ -64,8 +65,8 @@ namespace APKToolGUI.Handlers
             Register(main.fileTxtBox, null, apkInfoEventHandler, apks);
 
             DragEventHandler adbEventHandler = new DragEventHandler((sender, e) => { DropApkToInstall(e); });
-            Register(main.tabPageAdb, null, adbEventHandler, new string[] { ".apk" });
-            Register(main.installApkBtn, null, adbEventHandler, new string[] { ".apk" });
+            Register(main.tabPageAdb, null, adbEventHandler, apk);
+            Register(main.installApkBtn, null, adbEventHandler, apk);
         }
 
         void Register(Control ctrl, Control extCtrl, DragEventHandler dragHandler, string[] extension)
