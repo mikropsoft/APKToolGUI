@@ -4581,6 +4581,9 @@
   <data name="&gt;&gt;label_ZIPALIGN_AlignmentBytes.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="button_ZIPALIGN_BrowseOutputFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="button_ZIPALIGN_BrowseOutputFile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
