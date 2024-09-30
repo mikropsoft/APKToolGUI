@@ -1,3 +1,9 @@
+3.3.1.3
+- Updated APKTool to 2.10.0, APKEditor to 1.4.0 and all other tools
+- Minor fixes of drag and drop on merge APK section
+- Support window resizing
+- Fixed issue decompiling split apk using Apkeditor
+
 3.3.1.2
 - Option to override ABI for ADB
 - Fixed Target SDK showing wrong API level
