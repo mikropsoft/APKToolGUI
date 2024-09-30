@@ -636,7 +636,10 @@ namespace APKToolGUI
                     code = apkeditor.Merge(extractedDir, tempApk);
                     if (code == 0)
                     {
-                        code = apktool.Decompile(tempApk, tempDecApk);
+                        if (useAPKEditorForDecompilingItem.Checked)
+                            code = apkeditor.Decompile(tempApk, tempDecApk);
+                        else
+                            code = apktool.Decompile(tempApk, tempDecApk);
 
                         if (code == 0)
                         {
