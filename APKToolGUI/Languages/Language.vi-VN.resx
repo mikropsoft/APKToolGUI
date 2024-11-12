@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Sơ đồ Microsoft ResX
+    
+    Phiên bản 2.0
+    
+    Mục tiêu chính của định dạng này là cho phép một định dạng XML đơn giản
+    đọc được chủ yếu bằng tay. Việc tạo và phân tích cú pháp các
+    kiểu dữ liệu khác nhau được thực hiện thông qua các lớp TypeConverter
+    liên kết với các kiểu dữ liệu.
+    
+    Ví dụ:
+    
+    ... tiêu đề & sơ đồ ado.net/XML ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>đây là chuỗi dài của tôi</value><comment>đây là một bình luận</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[đối tượng .NET Framework được tuần tự hóa mã hóa mime base64]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[chuỗi mã hóa mime base64 đại diện cho mảng byte của đối tượng .NET Framework]</value>
+        <comment>Đây là một bình luận</comment>
+    </data>
+                
+    Có bất kỳ số lượng hàng "resheader" nào chứa đơn giản
+    các cặp tên/giá trị.
+    
+    Mỗi hàng dữ liệu chứa một tên và giá trị. Hàng cũng chứa một
+    kiểu hoặc mimetype. Kiểu tương ứng với một lớp .NET hỗ trợ
+    chuyển đổi văn bản/giá trị thông qua kiến trúc TypeConverter.
+    Các lớp không hỗ trợ điều này được tuần tự hóa và lưu trữ với
+    mimetype được đặt.
+    
+    mimetype được sử dụng cho các đối tượng được tuần tự hóa và cho biết
+    ResXResourceReader cách khôi phục đối tượng. Hiện tại điều này không
+    có thể mở rộng. Đối với một mimetype nhất định, giá trị phải được đặt cho phù hợp:
+    
+    Lưu ý - application/x-microsoft.net.object.binary.base64 là định dạng
+    mà ResXResourceWriter sẽ tạo ra, tuy nhiên trình đọc có thể
+    đọc bất kỳ định dạng nào được liệt kê bên dưới.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : Đối tượng phải được tuần tự hóa với
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : và sau đó được mã hóa bằng mã hóa base64.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : Đối tượng phải được tuần tự hóa với
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : và sau đó được mã hóa bằng mã hóa base64.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : Đối tượng phải được tuần tự hóa thành một mảng byte
+            : sử dụng System.ComponentModel.TypeConverter
+            : và sau đó được mã hóa bằng mã hóa base64.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="About" xml:space="preserve">
+    <value>Giới thiệu</value>
+  </data>
+	<data name="APKToolVersion" xml:space="preserve">
+    <value>Phiên bản Apktool</value>
+  </data>
+	<data name="CheckForUpdate" xml:space="preserve">
+    <value>Kiểm tra cập nhật</value>
+  </data>
+	<data name="DebugMode" xml:space="preserve">
+    <value>Chế độ gỡ lỗi</value>
+  </data>
+	<data name="Exit" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+	<data name="File" xml:space="preserve">
+    <value>Tệp</value>
+  </data>
+	<data name="Help" xml:space="preserve">
+    <value>Trợ giúp</value>
+  </data>
+	<data name="Settings" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+	<data name="ErrorJavaDetect" xml:space="preserve">
+    <value>Java chưa được cài đặt hoặc cài đặt không chính xác. Chương trình sẽ bị đóng.</value>
+  </data>
+	<data name="ErrorReadSettings" xml:space="preserve">
+    <value>Lỗi khi đọc cài đặt!</value>
+  </data>
+	<data name="UpdateNewVersion" xml:space="preserve">
+    <value>Phiên bản mới đã được phát hành. Bạn có muốn cập nhật không?</value>
+  </data>
+	<data name="UpdateNoUpdates" xml:space="preserve">
+    <value>Không có bản cập nhật nào khả dụng.</value>
+  </data>
+	<data name="WarningDecodingFolderNotSelected" xml:space="preserve">
+    <value>Chưa chọn thư mục giải mã!</value>
+  </data>
+	<data name="WarningFileForDecodingNotSelected" xml:space="preserve">
+    <value>Chưa chọn tệp để giải mã!</value>
+  </data>
+	<data name="WarningFileForSigningNotSelected" xml:space="preserve">
+    <value>Chưa chọn tệp để ký!</value>
+  </data>
+	<data name="WarningFrameworkNotSelected" xml:space="preserve">
+    <value>Chưa chọn Framework!</value>
+  </data>
+	<data name="ErrorSaveSettings" xml:space="preserve">
+    <value>Lỗi khi lưu cài đặt!</value>
+  </data>
+	<data name="NeedRestart" xml:space="preserve">
+    <value>Để những thay đổi này có hiệu lực, bạn phải khởi động lại chương trình. Bạn có muốn khởi động lại ngay bây giờ không?</value>
+  </data>
+	<data name="FileNotFound" xml:space="preserve">
+    <value>Tệp không tìm thấy</value>
+  </data>
+	<data name="FolderNotExist" xml:space="preserve">
+    <value>Thư mục không tồn tại</value>
+  </data>
+	<data name="Error" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+	<data name="Build" xml:space="preserve">
+    <value>Xây dựng</value>
+  </data>
+	<data name="Decode" xml:space="preserve">
+    <value>Giải mã</value>
+  </data>
+	<data name="InstallFramework" xml:space="preserve">
+    <value>Cài đặt Framework</value>
+  </data>
+	<data name="Sign" xml:space="preserve">
+    <value>Ký</value>
+  </data>
+	<data name="SystemLanguage" xml:space="preserve">
+    <value>Ngôn ngữ hệ thống</value>
+  </data>
+	<data name="DoYouRealyWantToInstallCM" xml:space="preserve">
+    <value>Bạn thực sự muốn cài đặt menu ngữ cảnh không?</value>
+  </data>
+	<data name="DoYouRealyWantToRemoveCM" xml:space="preserve">
+    <value>Bạn thực sự muốn xóa menu ngữ cảnh không?</value>
+  </data>
+	<data name="Done" xml:space="preserve">
+    <value>Hoàn tất</value>
+  </data>
+	<data name="CantDetectApktoolVersion" xml:space="preserve">
+    <value>Không thể phát hiện phiên bản apktool.</value>
+  </data>
+	<data name="DecompilingSuccessfullyCompleted" xml:space="preserve">
+    <value>Giải mã hoàn tất thành công. Thư mục đầu ra "{0}"</value>
+  </data>
+	<data name="ErrorUpdateChecking" xml:space="preserve">
+    <value>Lỗi kiểm tra cập nhật:</value>
+  </data>
+	<data name="SignSuccessfullyCompleted" xml:space="preserve">
+    <value>Ký hoàn tất thành công. Tệp được lưu vào "{0}"</value>
+  </data>
+	<data name="Aligning" xml:space="preserve">
+    <value>Đang căn chỉnh</value>
+  </data>
+	<data name="ErrorCompiling" xml:space="preserve">
+    <value>Lỗi biên dịch</value>
+  </data>
+	<data name="ErrorEnteringFrameworkTag" xml:space="preserve">
+    <value>Lỗi nhập thẻ Framework.</value>
+  </data>
+	<data name="ErrorSelectedFileNotExist" xml:space="preserve">
+    <value>Tệp đã chọn không tồn tại.</value>
+  </data>
+	<data name="ErrorSelectingFrameworkDirectory" xml:space="preserve">
+    <value>Lỗi chọn thư mục Framework.</value>
+  </data>
+	<data name="ErrorSelectingFrameworkFile" xml:space="preserve">
+    <value>Lỗi khi chọn tệp Framework. Tệp này không tồn tại.</value>
+  </data>
+	<data name="ErrorSigning" xml:space="preserve">
+    <value>Lỗi ký.</value>
+  </data>
+	<data name="FrameworkInstallationNotStarted" xml:space="preserve">
+    <value>Lỗi. Việc cài đặt Framework chưa bắt đầu.</value>
+  </data>
+	<data name="InstallingFramework" xml:space="preserve">
+    <value>Đang cài đặt Framework</value>
+  </data>
+	<data name="Signing" xml:space="preserve">
+    <value>Đang ký</value>
+  </data>
+	<data name="SignInputFileNotFound" xml:space="preserve">
+    <value>Không tìm thấy tệp đầu vào.</value>
+  </data>
+	<data name="SignPrivateKeyNotFound" xml:space="preserve">
+    <value>Không tìm thấy khóa riêng.</value>
+  </data>
+	<data name="SignPublicKeyNotFound" xml:space="preserve">
+    <value>Không tìm thấy khóa công khai.</value>
+  </data>
+	<data name="ZIPArchives" xml:space="preserve">
+    <value>Lưu trữ ZIP</value>
+  </data>
+	<data name="DecodeCouldNotCreate" xml:space="preserve">
+    <value>Không thể tạo thư mục giải mã đã chọn vì chứa ký tự không hợp lệ.</value>
+  </data>
+	<data name="DecodeDirNotSelected" xml:space="preserve">
+    <value>Chưa chọn thư mục giải mã.</value>
+  </data>
+	<data name="DecodeSelectedFrameworkNotExist" xml:space="preserve">
+    <value>Thư mục Framework đã chọn không tồn tại.</value>
+  </data>
+	<data name="Decoding" xml:space="preserve">
+    <value>Đang giải mã</value>
+  </data>
+	<data name="ErrorDecompiling" xml:space="preserve">
+    <value>Lỗi giải mã</value>
+  </data>
+	<data name="ExecutableFile" xml:space="preserve">
+    <value>Tệp thực thi</value>
+  </data>
+	<data name="ChangedTargetSdkTo29" xml:space="preserve">
+    <value>Đã thay đổi Target SDK thành 29</value>
+  </data>
+	<data name="ErrorVersionParsing" xml:space="preserve">
+    <value>Lỗi phân tích phiên bản</value>
+  </data>
+	<data name="FixAndroidManifest" xml:space="preserve">
+    <value>Sửa AndroidManifest.xml</value>
+  </data>
+	<data name="RemoveApkToolDummies" xml:space="preserve">
+    <value>Xóa tất cả các đối tượng giả ApkTool</value>
+  </data>
+	<data name="APKSelected" xml:space="preserve">
+    <value>APK đã chọn:</value>
+  </data>
+	<data name="ErrorSelectedFolderNotExist" xml:space="preserve">
+    <value>Thư mục đã chọn không tồn tại.</value>
+  </data>
+	<data name="AndroidManifestNotExist" xml:space="preserve">
+    <value>AndroidManifest.xml không tồn tại</value>
+  </data>
+	<data name="DecompiledAPKNotExist" xml:space="preserve">
+    <value>Thư mục APK đã giải mã không tồn tại</value>
+  </data>
+	<data name="MainActivityFound" xml:space="preserve">
+    <value>Đã tìm thấy Activity chính trong "{0}"</value>
+  </data>
+	<data name="MainActivityNotFoundPleaseFindManually" xml:space="preserve">
+    <value>Không thể tìm thấy MainActivity. Vui lòng tìm thủ công</value>
+  </data>
+	<data name="ClearingFramework" xml:space="preserve">
+    <value>Đang xóa Framework</value>
+  </data>
+	<data name="CompilingSuccessfullyCompleted" xml:space="preserve">
+    <value>Biên dịch hoàn tất thành công. Thư mục đầu ra "{0}"</value>
+  </data>
+	<data name="ErrorZipalign" xml:space="preserve">
+    <value>Lỗi Zip căn chỉnh</value>
+  </data>
+	<data name="ZipalignFileSavedTo" xml:space="preserve">
+    <value>Zip căn chỉnh hoàn tất thành công. Tệp được lưu vào "{0}"</value>
+  </data>
+	<data name="ErrorClearingFw" xml:space="preserve">
+    <value>Lỗi xóa Framework</value>
+  </data>
+	<data name="FrameworkCacheCleared" xml:space="preserve">
+    <value>Bộ nhớ đệm Framework đã được xóa</value>
+  </data>
+	<data name="AllDone" xml:space="preserve">
+    <value>Đã hoàn tất!</value>
+  </data>
+	<data name="FrameworkInstalled" xml:space="preserve">
+    <value>Framework đã được cài đặt thành công</value>
+  </data>
+	<data name="FrameworkDirNotExist" xml:space="preserve">
+    <value>Thư mục Framework không tồn tại</value>
+  </data>
+	<data name="DecompilingDex" xml:space="preserve">
+    <value>Đang giải mã dex</value>
+  </data>
+	<data name="ErrorSelectedOutputFolderNotExist" xml:space="preserve">
+    <value>Thư mục đầu ra đã chọn không tồn tại.</value>
+  </data>
+	<data name="CompilingDex" xml:space="preserve">
+    <value>Đang biên dịch dex</value>
+  </data>
+	<data name="DragDropNotSupported" xml:space="preserve">
+    <value>Bạn đang chạy với tư cách quản trị viên. Kéo và thả không được hỗ trợ.</value>
+  </data>
+	<data name="DragDropSupported" xml:space="preserve">
+    <value>Hỗ trợ kéo và thả</value>
+  </data>
+	<data name="ErrorNotAnApk" xml:space="preserve">
+    <value>Thư mục này không phải là gói Android</value>
+  </data>
+	<data name="Baksmali" xml:space="preserve">
+    <value>Baksmali</value>
+  </data>
+	<data name="Smali" xml:space="preserve">
+    <value>Smali</value>
+  </data>
+	<data name="Zipalign" xml:space="preserve">
+    <value>Zip căn chỉnh</value>
+  </data>
+	<data name="CompileApk" xml:space="preserve">
+    <value>Biên dịch APK</value>
+  </data>
+	<data name="CompileDex" xml:space="preserve">
+    <value>Biên dịch DEX</value>
+  </data>
+	<data name="DecompileApk" xml:space="preserve">
+    <value>Giải mã APK</value>
+  </data>
+	<data name="DecompileDex" xml:space="preserve">
+    <value>Giải mã DEX</value>
+  </data>
+	<data name="GetApkInfo" xml:space="preserve">
+    <value>Lấy thông tin APK</value>
+  </data>
+	<data name="NotDecompiledApk" xml:space="preserve">
+    <value>Thư mục này không phải là APK đã giải mã</value>
+  </data>
+	<data name="NotDecompiledDex" xml:space="preserve">
+    <value>Thư mục này không phải là DEX đã giải mã</value>
+  </data>
+	<data name="RequiredFilesMissing" xml:space="preserve">
+    <value>Thiếu tệp cần thiết</value>
+  </data>
+	<data name="SignApk" xml:space="preserve">
+    <value>Ký APK</value>
+  </data>
+	<data name="TextFile" xml:space="preserve">
+    <value>Tệp văn bản</value>
+  </data>
+	<data name="ZipalignApk" xml:space="preserve">
+    <value>Zip căn chỉnh APK</value>
+  </data>
+	<data name="CreateUnsignedApk" xml:space="preserve">
+    <value>Tạo APK chưa ký</value>
+  </data>
+	<data name="MetainfNotExist" xml:space="preserve">
+    <value>Thư mục META-INF không tồn tại. Đã bỏ qua</value>
+  </data>
+	<data name="ErrorGettingApkInfo" xml:space="preserve">
+    <value>Lỗi khi lấy thông tin APK</value>
+  </data>
+	<data name="InputDirectory" xml:space="preserve">
+    <value>Thư mục đầu vào: {0}</value>
+  </data>
+	<data name="InputFile" xml:space="preserve">
+    <value>Tệp đầu vào: {0}</value>
+  </data>
+  <data name="DeleteFile" xml:space="preserve">
+    <value>Xóa tệp "{0}"</value>
+  </data>
+  <data name="CopyFileToTemp" xml:space="preserve">
+    <value>Sao chép tệp "{0}" vào thư mục tạm "{1}"</value>
+  </data>
+  <data name="CopyFolderToTemp" xml:space="preserve">
+    <value>Sao chép thư mục apk đã giải mã "{0}" vào thư mục tạm "{1}"</value>
+  </data>
+  <data name="DecodeDesDirExists" xml:space="preserve">
+    <value>Thư mục đích "{0}" đã tồn tại. Nếu bạn muốn ghi đè lên nó, hãy bật "Buộc xóa thư mục đích".</value>
+  </data>
+  <data name="MoveTempApkFileToOutput" xml:space="preserve">
+    <value>Di chuyển thư mục tạm "{0}" vào thư mục đầu ra "{1}"</value>
+  </data>
+  <data name="MoveTempApkToOutput" xml:space="preserve">
+    <value>Di chuyển apk tạm "{0}" vào thư mục đầu ra "{1}"</value>
+  </data>
+  <data name="ParsingApkInfo" xml:space="preserve">
+    <value>Đang phân tích thông tin APK...</value>
+  </data>
+  <data name="RestartApplicationPrompt" xml:space="preserve">
+    <value>Cần khởi động lại để áp dụng thay đổi. Bạn có muốn khởi động lại ứng dụng không?</value>
+  </data>
+  <data name="DecompilingAllApkFiles" xml:space="preserve">
+    <value>Đang giải mã tất cả các tệp APK</value>
+  </data>
+  <data name="DetectedAsBase" xml:space="preserve">
+    <value>{0} được phát hiện là mô-đun cơ sở</value>
+  </data>
+  <data name="DetectedAsSplit" xml:space="preserve">
+    <value>{0} được phát hiện là tệp chia nhỏ</value>
+  </data>
+  <data name="ExtractingAllApkFiles" xml:space="preserve">
+    <value>Đang trích xuất tất cả các tệp APK</value>
+  </data>
+  <data name="MergeFinishedMoveDir" xml:space="preserve">
+    <value>Hoàn tất hợp nhất. Di chuyển thư mục đến "{0}"</value>
+  </data>
+  <data name="MergingApk" xml:space="preserve">
+    <value>Đang hợp nhất APK</value>
+  </data>
+  <data name="MovingBasedirectory" xml:space="preserve">
+    <value>Đang di chuyển thư mục mô-đun cơ sở đến "{0}"</value>
+  </data>
+  <data name="DirNotExist" xml:space="preserve">
+    <value>Thư mục "{0}" không tồn tại</value>
+  </data>
+  <data name="TempDirectory" xml:space="preserve">
+    <value>Thư mục tạm: "{0}"</value>
+  </data>
+  <data name="ErrorMerging" xml:space="preserve">
+    <value>Lỗi hợp nhất</value>
+  </data>
+  <data name="ExtractOrigSignature" xml:space="preserve">
+    <value>Trích xuất chữ ký gốc</value>
+  </data>
+  <data name="MergingApkEditor" xml:space="preserve">
+    <value>Đang hợp nhất APK bằng APKEditor.jar</value>
+  </data>
+  <data name="Aborted" xml:space="preserve">
+    <value>Đã bị hủy bỏ</value>
+  </data>
+  <data name="CancelProcess" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn hủy bỏ quy trình này không?</value>
+  </data>
+  <data name="GettingDevices" xml:space="preserve">
+    <value>Đang lấy thiết bị...</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Vui lòng chờ...</value>
+  </data>
+  <data name="ConfirmKillingAdbServer" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn chấm dứt máy chủ ADB không? Bạn có thể cần phải kết nối lại thiết bị của mình hoặc khởi động lại trình giả lập</value>
+  </data>
+  <data name="DeviceNotSelected" xml:space="preserve">
+    <value>Chưa chọn thiết bị</value>
+  </data>
+  <data name="DeviceSelected" xml:space="preserve">
+    <value>Đã chọn thiết bị "{0}"</value>
+  </data>
+  <data name="DevicesFound" xml:space="preserve">
+    <value>Đã tìm thấy {0} thiết bị</value>
+  </data>
+  <data name="InstallApkFailed" xml:space="preserve">
+    <value>Cài đặt APK thất bại</value>
+  </data>
+  <data name="InstallApkSuccessful" xml:space="preserve">
+    <value>Cài đặt APK thành công</value>
+  </data>
+  <data name="InstallingApk" xml:space="preserve">
+    <value>Đang cài đặt APK</value>
+  </data>
+  <data name="InstallingApkPath" xml:space="preserve">
+    <value>Đang cài đặt APK "{0}"</value>
+  </data>
+  <data name="NoDevicesFound" xml:space="preserve">
+    <value>Không tìm thấy thiết bị. Hãy đảm bảo rằng thiết bị của bạn đã được kết nối với máy tính và gỡ lỗi adb đã được bật. Nếu bạn đang sử dụng trình giả lập, hãy khởi động lại và chờ nó khởi động</value>
+  </data>
+  <data name="TimeEnded" xml:space="preserve">
+    <value>Thời gian kết thúc: {0}</value>
+  </data>
+  <data name="TimeStarted" xml:space="preserve">
+    <value>Thời gian bắt đầu: {0}</value>
+  </data>
+  <data name="ClearFrameworkPrompt" xml:space="preserve">
+    <value>Cần xóa bộ nhớ cache framework sau khi thay đổi phiên bản Apktool để tránh lỗi không mong muốn. Bạn có muốn xóa nó ngay bây giờ không?</value>
+  </data>
+  <data name="ClearTempFolder" xml:space="preserve">
+    <value>Xóa thư mục tạm</value>
+  </data>
+  <data name="DeletingFolder" xml:space="preserve">
+    <value>Đang xóa thư mục: {0}</value>
+  </data>
+  <data name="DirectoryNotExist" xml:space="preserve">
+    <value>Thư mục "{0}" không tồn tại</value>
+  </data>
+  <data name="OpenComFolder" xml:space="preserve">
+    <value>Mở thư mục đầu ra đã biên dịch</value>
+  </data>
+  <data name="OpenDecFolder" xml:space="preserve">
+    <value>Mở thư mục đầu ra đã giải mã</value>
+  </data>
+  <data name="FixApktoolYml" xml:space="preserve">
+    <value>Apktool.yml đã được sửa</value>
+  </data>
+  <data name="CopyFileTo" xml:space="preserve">
+    <value>Sao chép tệp "{0}" vào "{1}"</value>
+  </data>
+  <data name="SplitApkNotFound" xml:space="preserve">
+    <value>Chưa chọn APK chia nhỏ</value>
+  </data>
+  <data name="CantDetectApkeditorVersion" xml:space="preserve">
+    <value>Không thể phát hiện phiên bản APKEditor</value>
+  </data>
+</root>
