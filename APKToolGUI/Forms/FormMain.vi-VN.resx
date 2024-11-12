@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Sơ đồ Microsoft ResX
+    
+    Phiên bản 2.0
+    
+    Mục tiêu chính của định dạng này là cho phép một định dạng XML đơn giản
+    đọc được chủ yếu bằng tay. Việc tạo và phân tích cú pháp các
+    kiểu dữ liệu khác nhau được thực hiện thông qua các lớp TypeConverter
+    liên kết với các kiểu dữ liệu.
+    
+    Ví dụ:
+    
+    ... tiêu đề & sơ đồ ado.net/XML ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>đây là chuỗi dài của tôi</value><comment>đây là một bình luận</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[đối tượng .NET Framework được tuần tự hóa mã hóa mime base64]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[chuỗi mã hóa mime base64 đại diện cho mảng byte của đối tượng .NET Framework]</value>
+        <comment>Đây là một bình luận</comment>
+    </data>
+                
+    Có bất kỳ số lượng hàng "resheader" nào chứa đơn giản
+    các cặp tên/giá trị.
+    
+    Mỗi hàng dữ liệu chứa một tên và giá trị. Hàng cũng chứa một
+    kiểu hoặc mimetype. Kiểu tương ứng với một lớp .NET hỗ trợ
+    chuyển đổi văn bản/giá trị thông qua kiến trúc TypeConverter.
+    Các lớp không hỗ trợ điều này được tuần tự hóa và lưu trữ với
+    mimetype được đặt.
+    
+    mimetype được sử dụng cho các đối tượng được tuần tự hóa và cho biết
+    ResXResourceReader cách khôi phục đối tượng. Hiện tại điều này không
+    có thể mở rộng. Đối với một mimetype nhất định, giá trị phải được đặt cho phù hợp:
+    
+    Lưu ý - application/x-microsoft.net.object.binary.base64 là định dạng
+    mà ResXResourceWriter sẽ tạo ra, tuy nhiên trình đọc có thể
+    đọc bất kỳ định dạng nào được liệt kê bên dưới.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : Đối tượng phải được tuần tự hóa với
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : và sau đó được mã hóa bằng mã hóa base64.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : Đối tượng phải được tuần tự hóa với
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : và sau đó được mã hóa bằng mã hóa base64.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : Đối tượng phải được tuần tự hóa thành một mảng byte
+            : sử dụng System.ComponentModel.TypeConverter
+            : và sau đó được mã hóa bằng mã hóa base64.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="comApkOpenDir.Text" xml:space="preserve">
+    <value>Thư mục APK đã biên dịch</value>
+  </data>
+  <data name="decOutOpenDirBtn.Text" xml:space="preserve">
+    <value>Thư mục đầu ra đã giải mã</value>
+  </data>
+  <data name="signApkOpenDirBtn.Text" xml:space="preserve">
+    <value>Thư mục APK đã ký</value>
+  </data>
+  <data name="button_SIGN_Sign.Text" xml:space="preserve">
+    <value>Ký</value>
+  </data>
+  <data name="button_BUILD_Build.Text" xml:space="preserve">
+    <value>Biên dịch</value>
+  </data>
+  <data name="button_DECODE_Decode.Text" xml:space="preserve">
+    <value>Giải mã</value>
+  </data>
+  <data name="tabPageMain.Text" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="basicInfoTabPage.Text" xml:space="preserve">
+    <value>Thông tin cơ bản</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Thông tin đầy đủ</value>
+  </data>
+  <data name="tabPageApkInfo.Text" xml:space="preserve">
+    <value>Thông tin APK</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Tệp:</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Bản địa hóa:</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Quyền:</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Liên kết cửa hàng:</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Tên ứng dụng:</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Tên gói ứng dụng:</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Phiên bản:</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>SDK tối thiểu tương thích:</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Tên mã:</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Kích thước màn hình</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>SDK mục tiêu:</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Mật độ:</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Mục khởi chạy trên màn hình chính</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Kiến trúc:</value>
+  </data>
+  <data name="newInsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Quy trình mới</value>
+  </data>
+  <data name="saveLogToFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lưu nhật ký vào tệp</value>
+  </data>
+  <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="openTempFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mở thư mục tạm</value>
+  </data>
+  <data name="clearTempFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Xóa thư mục tạm</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tệp</value>
+  </data>
+  <data name="checkForUpdateToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kiểm tra cập nhật</value>
+  </data>
+  <data name="reportAnIsuueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Báo cáo sự cố</value>
+  </data>
+  <data name="apktoolIssuesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Báo cáo sự cố Apktool</value>
+  </data>
+  <data name="baksmaliIssuesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Báo cáo sự cố Baksmali</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>Giới thiệu</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Trợ giúp</value>
+  </data>
+  <data name="checkBox_BUILD_NetSecConf.Text" xml:space="preserve">
+    <value>Thêm cấu hình bảo mật mạng chung vào APK đầu ra</value>
+  </data>
+  <data name="useAapt2ChkBox.Text" xml:space="preserve">
+    <value>Sử dụng aapt2 (nâng cấp apktool sử dụng nhị phân aapt2 thử nghiệm)</value>
+  </data>
+  <data name="buildSetApiLvlChkBox.Text" xml:space="preserve">
+    <value>Đặt mức API của tệp cần tạo, ví dụ: ICS là 14</value>
+  </data>
+  <data name="createUnsignApkChkBox.Text" xml:space="preserve">
+    <value>Tạo APK chưa ký có chữ ký gốc sau khi biên dịch</value>
+  </data>
+  <data name="createUnsignApkChkBox.ToolTip" xml:space="preserve">
+    <value>Chỉ tương thích với mô-đun vá lỗi cốt lõi, cần thiết bị root.</value>
+  </data>
+  <data name="signAfterBuildChkBox.Text" xml:space="preserve">
+    <value>Ký sau khi biên dịch / zip căn chỉnh</value>
+  </data>
+  <data name="zipalignAfterBuildChkBox.Text" xml:space="preserve">
+    <value>Căn chỉnh zip sau khi biên dịch</value>
+  </data>
+  <data name="checkBox_BUILD_NoCrunch.Text" xml:space="preserve">
+    <value>Vô hiệu hóa xử lý tệp resource trong bước biên dịch</value>
+  </data>
+  <data name="checkBox_BUILD_ForceAll.Text" xml:space="preserve">
+    <value>Bỏ qua phát hiện thay đổi và biên dịch tất cả tệp</value>
+  </data>
+  <data name="checkBox_BUILD_OutputAppPath.Text" xml:space="preserve">
+    <value>Thư mục đầu ra APK</value>
+  </data>
+  <data name="checkBox_BUILD_OutputAppPath.ToolTip" xml:space="preserve">
+    <value>Thư mục đầu ra sau khi biên dịch cũng sẽ được sử dụng cho Zipalign và ký</value>
+  </data>
+  <data name="checkBox_BUILD_CopyOriginal.Text" xml:space="preserve">
+    <value>Sao chép AndroidManifest.xml và thư mục META-INF gốc</value>
+  </data>
+  <data name="checkBox_BUILD_UseAapt.Text" xml:space="preserve">
+    <value>Vị trí tệp aapt.exe được sử dụng:</value>
+  </data>
+  <data name="checkBox_BUILD_UseFramework.Text" xml:space="preserve">
+    <value>Vị trí tệp framework được sử dụng:</value>
+  </data>
+  <data name="groupBox_BUILD_Options.Text" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="tabPageBuild.Text" xml:space="preserve">
+    <value>Biên dịch</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Chọn thiết bị</value>
+  </data>
+  <data name="killAdbBtn.Text" xml:space="preserve">
+    <value>Kết thúc tiến trình ADB</value>
+  </data>
+  <data name="installApkBtn.Text" xml:space="preserve">
+    <value>Cài đặt APK</value>
+  </data>
+  <data name="refreshDevicesBtn.Text" xml:space="preserve">
+    <value>Làm mới</value>
+  </data>
+  <data name="setVendorChkBox.Text" xml:space="preserve">
+    <value>Đặt vendor thành Play Store (com.android.vending)</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Chọn APK</value>
+  </data>
+  <data name="toolStripStatusLabelStateText.Text" xml:space="preserve">
+    <value>Đang tải...</value>
+  </data>
+  <data name="clearLogToolStripMenuItem.Text" xml:space="preserve">
+    <value>Xóa nhật ký</value>
+  </data>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>Cài đặt APK sau khi ký (đảm bảo chọn thiết bị trong tùy chọn ADB trước)</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Ghi đè lên tệp đầu vào</value>
+  </data>
+  <data name="autoDelIdsigChkBox.Text" xml:space="preserve">
+    <value>Tự động xóa tệp idsig</value>
+  </data>
+  <data name="schemev4ComboBox.Items" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="schemev4ComboBox.Items1" xml:space="preserve">
+    <value>Bật</value>
+  </data>
+  <data name="schemev4ComboBox.Items2" xml:space="preserve">
+    <value>Tắt</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Sơ đồ ký v4:</value>
+  </data>
+  <data name="schemev3ComboBox.Items" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="schemev3ComboBox.Items1" xml:space="preserve">
+    <value>Bật</value>
+  </data>
+  <data name="schemev3ComboBox.Items2" xml:space="preserve">
+    <value>Tắt</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Sơ đồ ký v3:</value>
+  </data>
+  <data name="schemev2ComboBox.Items" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="schemev2ComboBox.Items1" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+  <data name="schemev2ComboBox.Items2" xml:space="preserve">
+    <value>Tắt</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Sơ đồ ký v2:</value>
+  </data>
+  <data name="schemev1ComboBox.Items" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="schemev1ComboBox.Items1" xml:space="preserve">
+    <value>Bật</value>
+  </data>
+  <data name="schemev1ComboBox.Items2" xml:space="preserve">
+    <value>Tắt</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Sơ đồ ký v1:</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Mật khẩu:</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Tệp keystore/jks:</value>
+  </data>
+  <data name="useKeyStoreChkBox.Text" xml:space="preserve">
+    <value>Sử dụng keystore</value>
+  </data>
+  <data name="useSigningOutputDir.Text" xml:space="preserve">
+    <value>Thư mục đầu ra APK:</value>
+  </data>
+  <data name="label_SIGN_PrivateKey.Text" xml:space="preserve">
+    <value>Khóa riêng:</value>
+  </data>
+  <data name="label_SIGN_PublicKey.Text" xml:space="preserve">
+    <value>Khóa công khai:</value>
+  </data>
+  <data name="groupBox_SIGN_Options.Text" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="tabPageSign.Text" xml:space="preserve">
+    <value>Ký</value>
+  </data>
+  <data name="zipalignOutputDirChkBox.Text" xml:space="preserve">
+    <value>Thư mục đầu ra APK:</value>
+  </data>
+  <data name="signAfterZipalignChkBox.Text" xml:space="preserve">
+    <value>Ký sau khi zip căn chỉnh</value>
+  </data>
+  <data name="checkBox7.Text" xml:space="preserve">
+    <value>Không phân tích thông tin APK khi chọn APK để giải mã</value>
+  </data>
+  <data name="checkBox_DECODE_UseApkEditorMerge.Text" xml:space="preserve">
+    <value>Sử dụng APKEditor.jar để hợp nhất, tách APK (nhanh hơn)</value>
+  </data>
+  <data name="decSetApiLvlChkBox.Text" xml:space="preserve">
+    <value>Đặt mức API của tệp cần tạo, ví dụ: ICS là 14</value>
+  </data>
+  <data name="checkBox_DECODE_FixError.Text" xml:space="preserve">
+    <value>Sửa lỗi ApkTool sau khi giải mã</value>
+  </data>
+  <data name="checkBox_DECODE_FixError.ToolTip" xml:space="preserve">
+    <value>Sẽ xóa extractNativeLibs, useEmbeddedDex, APKTOOL_DUMMY, các thuộc tính liên quan đến việc tách và đặt sparseresource thành false</value>
+  </data>
+  <data name="checkBox_DECODE_OnlyMainClasses.Text" xml:space="preserve">
+    <value>Chỉ giải mã các lớp chính trong thư mục gốc (classes[0-9]*.dex).</value>
+  </data>
+  <data name="checkBox_DECODE_OnlyMainClasses.ToolTip" xml:space="preserve">
+    <value>Sửa lỗi ApkTool bất thường</value>
+  </data>
+  <data name="checkBox_DECODE_UseFramework.Text" xml:space="preserve">
+    <value>Vị trí tệp framework được sử dụng:</value>
+  </data>
+  <data name="checkBox_DECODE_MatchOriginal.Text" xml:space="preserve">
+    <value>Giữ cho tệp gần giống với bản gốc nhất có thể, ngăn chặn việc xây dựng lại</value>
+  </data>
+  <data name="checkBox_DECODE_OutputDirectory.Text" xml:space="preserve">
+    <value>Thư mục đầu ra:</value>
+  </data>
+  <data name="checkBox_DECODE_KeepBrokenRes.Text" xml:space="preserve">
+    <value>Giữ nguyên tài nguyên bị hỏng</value>
+  </data>
+  <data name="checkBox_DECODE_Force.Text" xml:space="preserve">
+    <value>Buộc xóa thư mục đích</value>
+  </data>
+  <data name="checkBox_DECODE_NoDebugInfo.Text" xml:space="preserve">
+    <value>Không xuất thông tin gỡ lỗi (.Local, .param, .line, v.v.)</value>
+  </data>
+  <data name="groupBox_DECODE_Options.Text" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="tabPageDecode.Text" xml:space="preserve">
+    <value>Giải mã</value>
+  </data>
+  <data name="useAliasChkBox.Text" xml:space="preserve">
+    <value>Tên viết tắt</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Rất khuyến khích bạn sử dụng khóa riêng của mình, được tạo bằng Android Studio hoặc các công cụ khác</value>
+  </data>
+  <data name="checkBox_ZIPALIGN_Recompress.Text" xml:space="preserve">
+    <value>Nén lại bằng Zopfli</value>
+  </data>
+  <data name="label_ZIPALIGN_AlignmentBytes.Text" xml:space="preserve">
+    <value>Căn chỉnh theo bytes, ví dụ: '4' cung cấp căn chỉnh 32-bit</value>
+  </data>
+  <data name="checkBox_ZIPALIGN_CheckAlignment.Text" xml:space="preserve">
+    <value>Chỉ kiểm tra căn chỉnh (không sửa đổi tệp)</value>
+  </data>
+  <data name="checkBox_ZIPALIGN_VerboseOutput.Text" xml:space="preserve">
+    <value>Đầu ra chi tiết</value>
+  </data>
+  <data name="checkBox_ZIPALIGN_OverwriteOutputFile.Text" xml:space="preserve">
+    <value>Ghi đè lên tệp đầu ra hiện có</value>
+  </data>
+  <data name="groupBox_ZIPALIGN_Options.Text" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="openFwFolderBtn.Text" xml:space="preserve">
+    <value>Mở thư mục framework</value>
+  </data>
+  <data name="clearFwBtn.Text" xml:space="preserve">
+    <value>Xóa bộ nhớ cache framework</value>
+  </data>
+  <data name="clearFwBeforeDecodeChkBox.Text" xml:space="preserve">
+    <value>Xóa bộ nhớ cache Framework trước khi giải mã</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="checkBox_IF_Tag.Text" xml:space="preserve">
+    <value>Thẻ framework được sử dụng:</value>
+  </data>
+  <data name="checkBox_IF_FramePath.Text" xml:space="preserve">
+    <value>Lưu tệp framework vào:</value>
+  </data>
+  <data name="groupBox_IF_Options.Text" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="alignApkOpenDirBtn.Text" xml:space="preserve">
+    <value>Thư mục APK đã zip căn chỉnh</value>
+  </data>
+  <data name="decApkOpenDirBtn.Text" xml:space="preserve">
+    <value>Thư mục APK đã giải mã</value>
+  </data>
+  <data name="compileOutputOpenDirBtn.Text" xml:space="preserve">
+    <value>Thư mục đầu ra đã biên dịch</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Chữ ký APK:</value>
+  </data>
+  <data name="button_ZIPALIGN_Align.Text" xml:space="preserve">
+    <value>Căn chỉnh</value>
+  </data>
+  <data name="checkBox_DECODE_NoSrc.Text" xml:space="preserve">
+    <value>Không giải mã mã nguồn</value>
+  </data>
+  <data name="checkBox_DECODE_NoRes.Text" xml:space="preserve">
+    <value>Không giải mã tài nguyên</value>
+  </data>
+  <data name="button_IF_InstallFramework.Text" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Thư mục biên dịch Smali:</value>
+  </data>
+  <data name="smaliUseOutputChkBox.Text" xml:space="preserve">
+    <value>Thư mục đầu ra Dex:</value>
+  </data>
+  <data name="comSmaliBtn.Text" xml:space="preserve">
+    <value>Biên dịch</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Giải mã dex</value>
+  </data>
+  <data name="baksmaliUseOutputChkBox.Text" xml:space="preserve">
+    <value>Thư mục đầu ra:</value>
+  </data>
+  <data name="decSmaliBtn.Text" xml:space="preserve">
+    <value>Giải mã</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Thư mục APK đã giải mã:</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Căn chỉnh tệp APK:</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Tệp APK/XAPK/APKS/ZIP/APKM:</value>
+  </data>
+  <data name="button_OpenMainActivity.Text" xml:space="preserve">
+    <value>Smali khởi chạy</value>
+  </data>
+  <data name="tabPageZipAlign.Text" xml:space="preserve">
+    <value>Zip căn chỉnh</value>
+  </data>
+</root>
