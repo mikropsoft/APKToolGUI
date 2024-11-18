@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="checkBox7.Text" xml:space="preserve">
-    <value>自定义JVM命令</value>
+    <value>自定义 JVM 命令</value>
   </data>
   <data name="checkBox6.Text" xml:space="preserve">
     <value>调试模式</value>
@@ -135,17 +135,21 @@
   <data name="label1.Text" xml:space="preserve">
     <value>主题</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="useCustomApktoolChk.TabIndex" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="useCustomApktoolChk.Text" xml:space="preserve">
-    <value>自定义apktool位置</value>
+    <value>自定义 apktool 位置</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>操作过程的文件移动到缓存目录中需要时间，请耐心等待</value>
   </data>
   <data name="checkBox5.Text" xml:space="preserve">
-    <value>UTF-8文件名支持，中文乱码开启</value>
+    <value>UTF-8 文件名支持，中文乱码开启</value>
   </data>
   <data name="checkBox4.Text" xml:space="preserve">
-    <value>自定义Java位置</value>
+    <value>自定义 Java 位置</value>
   </data>
   <data name="checkBox3.Text" xml:space="preserve">
     <value>自定义缓存位置</value>
@@ -154,7 +158,7 @@
     <value>完成提示音</value>
   </data>
   <data name="checkBox1.Text" xml:space="preserve">
-    <value>动作前清理日志</value>
+    <value>操作前清除日志</value>
   </data>
   <data name="checkBoxCheckUpdateStartup.Text" xml:space="preserve">
     <value>启动时检查更新</value>

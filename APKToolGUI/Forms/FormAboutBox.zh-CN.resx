@@ -130,7 +130,7 @@
     <value>描述</value>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
-    <value>Github反馈</value>
+    <value>Github 仓库</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>关于</value>
