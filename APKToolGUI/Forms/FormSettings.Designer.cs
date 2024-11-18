@@ -134,12 +134,12 @@
             // 
             // themeComboBox
             // 
+            resources.ApplyResources(this.themeComboBox, "themeComboBox");
             this.themeComboBox.FormattingEnabled = true;
             this.themeComboBox.Items.AddRange(new object[] {
             resources.GetString("themeComboBox.Items"),
             resources.GetString("themeComboBox.Items1"),
             resources.GetString("themeComboBox.Items2")});
-            resources.ApplyResources(this.themeComboBox, "themeComboBox");
             this.themeComboBox.Name = "themeComboBox";
             // 
             // label1
@@ -265,8 +265,8 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Name = "comboBox1";
             // 
