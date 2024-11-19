@@ -180,7 +180,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Decode_ApiLevel" Provider="Bluegrams.Application.PortableSettingsProvider" Roaming="true" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">29</Value>
+      <Value Profile="(Default)">4</Value>
     </Setting>
     <Setting Name="Build_ApiLevel" Provider="Bluegrams.Application.PortableSettingsProvider" Roaming="true" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">29</Value>
@@ -282,6 +282,18 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Adb_SetOverrideAbi" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Build_Jobs" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="Decode_Jobs" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="Decode_SetJobs" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Build_SetJobs" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>

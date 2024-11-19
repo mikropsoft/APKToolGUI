@@ -117,68 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="splitApkTxt.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="splitApkPathTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="selSplitApkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="mergeApkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="mergePanel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="comApkOpenDir.Text" xml:space="preserve">
     <value>Thư mục APK đã biên dịch</value>
-  </data>
-  <data name="comApkOpenDir.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="decOutOpenDirBtn.Text" xml:space="preserve">
     <value>Thư mục đầu ra đã giải mã</value>
   </data>
-  <data name="decOutOpenDirBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="signApkOpenDirBtn.Text" xml:space="preserve">
     <value>Thư mục APK đã ký</value>
-  </data>
-  <data name="signApkOpenDirBtn.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="alignApkOpenDirBtn.Text" xml:space="preserve">
     <value>Thư mục APK đã zip căn chỉnh</value>
   </data>
-  <data name="alignApkOpenDirBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="decApkOpenDirBtn.Text" xml:space="preserve">
     <value>Thư mục APK đã giải mã</value>
-  </data>
-  <data name="decApkOpenDirBtn.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="compileOutputOpenDirBtn.Text" xml:space="preserve">
     <value>Thư mục đầu ra đã biên dịch</value>
   </data>
-  <data name="compileOutputOpenDirBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button_OpenMainActivity.Text" xml:space="preserve">
     <value>Smali khởi chạy</value>
-  </data>
-  <data name="button_OpenMainActivity.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="openApktoolYmlBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="openAndroidMainfestBtn.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
@@ -187,23 +145,8 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Chữ ký APK:</value>
   </data>
-  <data name="label4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_SIGN_InputFile.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_SIGN_BrowseInputFile.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button_SIGN_Sign.Text" xml:space="preserve">
     <value>Ký</value>
-  </data>
-  <data name="button_SIGN_Sign.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="signPanel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 13</value>
@@ -211,23 +154,8 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Căn chỉnh tệp APK:</value>
   </data>
-  <data name="label3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button_ZIPALIGN_Align.Text" xml:space="preserve">
     <value>Căn chỉnh</value>
-  </data>
-  <data name="button_ZIPALIGN_Align.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_ZIPALIGN_BrowseInputFile.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_ZIPALIGN_InputFile.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="zipalignPanel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 13</value>
@@ -235,23 +163,8 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Thư mục APK đã giải mã:</value>
   </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_BUILD_BrowseInputProjectDir.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button_BUILD_Build.Text" xml:space="preserve">
     <value>Biên dịch</value>
-  </data>
-  <data name="button_BUILD_Build.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_BUILD_InputProjectDir.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comPanel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 13</value>
@@ -259,35 +172,11 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Tệp APK/XAPK/APKS/ZIP/APKM:</value>
   </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_DECODE_InputAppPath.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button_DECODE_Decode.Text" xml:space="preserve">
     <value>Giải mã</value>
   </data>
-  <data name="button_DECODE_Decode.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_DECODE_BrowseInputAppPath.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="decPanel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tabPageMain.Text" xml:space="preserve">
     <value>Trang chủ</value>
-  </data>
-  <data name="tabPageMain.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="sigTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label5.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="launchActivityTxtBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 168</value>
@@ -295,20 +184,11 @@
   <data name="launchActivityTxtBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>340, 22</value>
   </data>
-  <data name="launchActivityTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 13</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
     <value>Mục khởi chạy trên màn hình chính</value>
-  </data>
-  <data name="label31.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="archSdkTxtBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 13</value>
@@ -316,38 +196,11 @@
   <data name="label30.Text" xml:space="preserve">
     <value>Kiến trúc:</value>
   </data>
-  <data name="label30.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkDlLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkSosLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkMirrorLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkSupportLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkGkLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 13</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
     <value>Tệp:</value>
-  </data>
-  <data name="label17.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="localsTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="selApkFileInfoBtn.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 13</value>
@@ -355,29 +208,11 @@
   <data name="label18.Text" xml:space="preserve">
     <value>Bản địa hóa:</value>
   </data>
-  <data name="label18.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="appTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="permTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkComboLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
     <value>Quyền:</value>
-  </data>
-  <data name="label15.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="fileTxtBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
@@ -385,35 +220,11 @@
   <data name="label14.Text" xml:space="preserve">
     <value>Mật độ:</value>
   </data>
-  <data name="label14.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="densityTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkAioLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="packNameTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkPureLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="verTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="psLinkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="minSdkTxtBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>180, 222</value>
   </data>
   <data name="minSdkTxtBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
-  </data>
-  <data name="minSdkTxtBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 13</value>
@@ -421,23 +232,11 @@
   <data name="label19.Text" xml:space="preserve">
     <value>Liên kết cửa hàng:</value>
   </data>
-  <data name="label19.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="targetSdkTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="screenTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 13</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Tên ứng dụng:</value>
-  </data>
-  <data name="label7.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 13</value>
@@ -445,23 +244,11 @@
   <data name="label9.Text" xml:space="preserve">
     <value>Tên gói ứng dụng:</value>
   </data>
-  <data name="label9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buildTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 13</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Phiên bản:</value>
-  </data>
-  <data name="label8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkIconPicBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 13</value>
@@ -469,17 +256,11 @@
   <data name="label11.Text" xml:space="preserve">
     <value>SDK tối thiểu tương thích:</value>
   </data>
-  <data name="label11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 13</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Tên mã:</value>
-  </data>
-  <data name="label10.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 13</value>
@@ -487,41 +268,20 @@
   <data name="label13.Text" xml:space="preserve">
     <value>Kích thước màn hình</value>
   </data>
-  <data name="label13.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>SDK mục tiêu:</value>
   </data>
-  <data name="label12.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="basicInfoTabPage.Text" xml:space="preserve">
     <value>Thông tin cơ bản</value>
-  </data>
-  <data name="basicInfoTabPage.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="fullInfoTextBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Thông tin đầy đủ</value>
   </data>
-  <data name="tabPage3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabControl1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tabPageApkInfo.Text" xml:space="preserve">
     <value>Thông tin APK</value>
-  </data>
-  <data name="tabPageApkInfo.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>312, 17</value>
@@ -529,20 +289,11 @@
   <data name="checkBox7.Text" xml:space="preserve">
     <value>Không phân tích thông tin APK khi chọn APK để giải mã</value>
   </data>
-  <data name="checkBox7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="decApiLvlUpDown.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="decSetApiLvlChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>249, 17</value>
   </data>
   <data name="decSetApiLvlChkBox.Text" xml:space="preserve">
     <value>Đặt mức API của tệp cần tạo, ví dụ: ICS là 14</value>
-  </data>
-  <data name="decSetApiLvlChkBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_DECODE_FixError.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 17</value>
@@ -562,23 +313,11 @@
   <data name="checkBox_DECODE_OnlyMainClasses.ToolTip" xml:space="preserve">
     <value>Sửa lỗi ApkTool bất thường</value>
   </data>
-  <data name="textBox_DECODE_FrameDir.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_DECODE_BrowseOutputDirectory.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_DECODE_UseFramework.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 17</value>
   </data>
   <data name="checkBox_DECODE_UseFramework.Text" xml:space="preserve">
     <value>Vị trí tệp framework được sử dụng:</value>
-  </data>
-  <data name="checkBox_DECODE_UseFramework.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_DECODE_BrowseFrameDir.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_DECODE_MatchOriginal.Size" type="System.Drawing.Size, System.Drawing">
     <value>416, 17</value>
@@ -586,20 +325,11 @@
   <data name="checkBox_DECODE_MatchOriginal.Text" xml:space="preserve">
     <value>Giữ cho tệp gần giống với bản gốc nhất có thể, ngăn chặn việc xây dựng lại</value>
   </data>
-  <data name="checkBox_DECODE_MatchOriginal.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_DECODE_OutputDirectory.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 17</value>
   </data>
   <data name="checkBox_DECODE_OutputDirectory.Text" xml:space="preserve">
     <value>Thư mục đầu ra:</value>
-  </data>
-  <data name="checkBox_DECODE_OutputDirectory.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_DECODE_OutputDirectory.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_DECODE_KeepBrokenRes.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 17</value>
@@ -607,17 +337,11 @@
   <data name="checkBox_DECODE_KeepBrokenRes.Text" xml:space="preserve">
     <value>Giữ nguyên tài nguyên bị hỏng</value>
   </data>
-  <data name="checkBox_DECODE_KeepBrokenRes.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_DECODE_NoSrc.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 17</value>
   </data>
   <data name="checkBox_DECODE_NoSrc.Text" xml:space="preserve">
     <value>Không giải mã mã nguồn</value>
-  </data>
-  <data name="checkBox_DECODE_NoSrc.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_DECODE_Force.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 17</value>
@@ -625,14 +349,8 @@
   <data name="checkBox_DECODE_Force.Text" xml:space="preserve">
     <value>Buộc xóa thư mục đích</value>
   </data>
-  <data name="checkBox_DECODE_Force.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_DECODE_NoRes.Text" xml:space="preserve">
     <value>Không giải mã tài nguyên</value>
-  </data>
-  <data name="checkBox_DECODE_NoRes.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_DECODE_NoDebugInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 17</value>
@@ -640,20 +358,11 @@
   <data name="checkBox_DECODE_NoDebugInfo.Text" xml:space="preserve">
     <value>Không xuất thông tin gỡ lỗi (.Local, .param, .line, v.v.)</value>
   </data>
-  <data name="checkBox_DECODE_NoDebugInfo.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="groupBox_DECODE_Options.Text" xml:space="preserve">
     <value>Tùy chọn</value>
   </data>
-  <data name="groupBox_DECODE_Options.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tabPageDecode.Text" xml:space="preserve">
     <value>Giải mã</value>
-  </data>
-  <data name="tabPageDecode.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_BUILD_NetSecConf.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 17</value>
@@ -661,29 +370,17 @@
   <data name="checkBox_BUILD_NetSecConf.Text" xml:space="preserve">
     <value>Thêm cấu hình bảo mật mạng chung vào APK đầu ra</value>
   </data>
-  <data name="checkBox_BUILD_NetSecConf.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="useAapt2ChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>393, 17</value>
   </data>
   <data name="useAapt2ChkBox.Text" xml:space="preserve">
     <value>Sử dụng aapt2 (nâng cấp apktool sử dụng nhị phân aapt2 thử nghiệm)</value>
   </data>
-  <data name="useAapt2ChkBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buildApiLvlUpDown.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="buildSetApiLvlChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>249, 17</value>
   </data>
   <data name="buildSetApiLvlChkBox.Text" xml:space="preserve">
     <value>Đặt mức API của tệp cần tạo, ví dụ: ICS là 14</value>
-  </data>
-  <data name="buildSetApiLvlChkBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="createUnsignApkChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 17</value>
@@ -700,17 +397,11 @@
   <data name="signAfterBuildChkBox.Text" xml:space="preserve">
     <value>Ký sau khi biên dịch / zip căn chỉnh</value>
   </data>
-  <data name="signAfterBuildChkBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="zipalignAfterBuildChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>187, 17</value>
   </data>
   <data name="zipalignAfterBuildChkBox.Text" xml:space="preserve">
     <value>Căn chỉnh zip sau khi biên dịch</value>
-  </data>
-  <data name="zipalignAfterBuildChkBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_BUILD_NoCrunch.Size" type="System.Drawing.Size, System.Drawing">
     <value>293, 17</value>
@@ -718,26 +409,11 @@
   <data name="checkBox_BUILD_NoCrunch.Text" xml:space="preserve">
     <value>Vô hiệu hóa xử lý tệp resource trong bước biên dịch</value>
   </data>
-  <data name="checkBox_BUILD_NoCrunch.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_BUILD_BrowseOutputAppPath.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_BUILD_ForceAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>276, 17</value>
   </data>
   <data name="checkBox_BUILD_ForceAll.Text" xml:space="preserve">
     <value>Bỏ qua phát hiện thay đổi và biên dịch tất cả tệp</value>
-  </data>
-  <data name="checkBox_BUILD_ForceAll.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_BUILD_BrowseFrameDir.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_BUILD_BrowseAaptPath.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_BUILD_OutputAppPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 17</value>
@@ -754,26 +430,11 @@
   <data name="checkBox_BUILD_CopyOriginal.Text" xml:space="preserve">
     <value>Sao chép AndroidManifest.xml và thư mục META-INF gốc</value>
   </data>
-  <data name="checkBox_BUILD_CopyOriginal.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_BUILD_OutputAppPath.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_BUILD_UseAapt.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 17</value>
   </data>
   <data name="checkBox_BUILD_UseAapt.Text" xml:space="preserve">
     <value>Vị trí tệp aapt.exe được sử dụng:</value>
-  </data>
-  <data name="checkBox_BUILD_UseAapt.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_BUILD_AaptPath.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_BUILD_FrameDir.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_BUILD_UseFramework.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 17</value>
@@ -781,20 +442,11 @@
   <data name="checkBox_BUILD_UseFramework.Text" xml:space="preserve">
     <value>Vị trí tệp framework được sử dụng:</value>
   </data>
-  <data name="checkBox_BUILD_UseFramework.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="groupBox_BUILD_Options.Text" xml:space="preserve">
     <value>Tùy chọn</value>
   </data>
-  <data name="groupBox_BUILD_Options.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tabPageBuild.Text" xml:space="preserve">
     <value>Biên dịch</value>
-  </data>
-  <data name="tabPageBuild.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>395, 17</value>
@@ -802,26 +454,17 @@
   <data name="checkBox2.Text" xml:space="preserve">
     <value>Cài đặt APK sau khi ký (đảm bảo chọn thiết bị trong tùy chọn ADB trước)</value>
   </data>
-  <data name="checkBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 17</value>
   </data>
   <data name="checkBox1.Text" xml:space="preserve">
     <value>Ghi đè lên tệp đầu vào</value>
   </data>
-  <data name="checkBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="autoDelIdsigChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 17</value>
   </data>
   <data name="autoDelIdsigChkBox.Text" xml:space="preserve">
     <value>Tự động xóa tệp idsig</value>
-  </data>
-  <data name="autoDelIdsigChkBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="schemev4ComboBox.Items" xml:space="preserve">
     <value>Mặc định</value>
@@ -832,17 +475,11 @@
   <data name="schemev4ComboBox.Items2" xml:space="preserve">
     <value>Tắt</value>
   </data>
-  <data name="schemev4ComboBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
     <value>Sơ đồ ký v4:</value>
-  </data>
-  <data name="label27.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="schemev3ComboBox.Items" xml:space="preserve">
     <value>Mặc định</value>
@@ -853,17 +490,11 @@
   <data name="schemev3ComboBox.Items2" xml:space="preserve">
     <value>Tắt</value>
   </data>
-  <data name="schemev3ComboBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
     <value>Sơ đồ ký v3:</value>
-  </data>
-  <data name="label26.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="schemev2ComboBox.Items" xml:space="preserve">
     <value>Mặc định</value>
@@ -874,17 +505,11 @@
   <data name="schemev2ComboBox.Items2" xml:space="preserve">
     <value>Tắt</value>
   </data>
-  <data name="schemev2ComboBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
     <value>Sơ đồ ký v2:</value>
-  </data>
-  <data name="label25.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="schemev1ComboBox.Items" xml:space="preserve">
     <value>Mặc định</value>
@@ -895,26 +520,11 @@
   <data name="schemev1ComboBox.Items2" xml:space="preserve">
     <value>Tắt</value>
   </data>
-  <data name="schemev1ComboBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
     <value>Sơ đồ ký v1:</value>
-  </data>
-  <data name="label24.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="selectKeyStoreFileBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="aliasTxtBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="useAliasChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 17</value>
@@ -922,23 +532,11 @@
   <data name="useAliasChkBox.Text" xml:space="preserve">
     <value>Tên viết tắt</value>
   </data>
-  <data name="useAliasChkBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label22.Text" xml:space="preserve">
     <value>Rất khuyến khích bạn sử dụng khóa riêng của mình, được tạo bằng Android Studio hoặc các công cụ khác</value>
   </data>
-  <data name="label22.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="keyStoreFileTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label21.Text" xml:space="preserve">
     <value>Mật khẩu:</value>
-  </data>
-  <data name="label21.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 13</value>
@@ -946,17 +544,11 @@
   <data name="label20.Text" xml:space="preserve">
     <value>Tệp keystore/jks:</value>
   </data>
-  <data name="label20.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="useKeyStoreChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 17</value>
   </data>
   <data name="useKeyStoreChkBox.Text" xml:space="preserve">
     <value>Sử dụng keystore</value>
-  </data>
-  <data name="useKeyStoreChkBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="useSigningOutputDir.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 17</value>
@@ -964,17 +556,11 @@
   <data name="useSigningOutputDir.Text" xml:space="preserve">
     <value>Thư mục đầu ra APK:</value>
   </data>
-  <data name="useSigningOutputDir.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label_SIGN_PrivateKey.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 13</value>
   </data>
   <data name="label_SIGN_PrivateKey.Text" xml:space="preserve">
     <value>Khóa riêng:</value>
-  </data>
-  <data name="label_SIGN_PrivateKey.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label_SIGN_PublicKey.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 13</value>
@@ -982,38 +568,11 @@
   <data name="label_SIGN_PublicKey.Text" xml:space="preserve">
     <value>Khóa công khai:</value>
   </data>
-  <data name="label_SIGN_PublicKey.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_SIGN_BrowseOutputFile.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_SIGN_OutputFile.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_SIGN_BrowsePublicKey.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_SIGN_BrowsePrivateKey.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_SIGN_PublicKey.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_SIGN_PrivateKey.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="groupBox_SIGN_Options.Text" xml:space="preserve">
     <value>Tùy chọn</value>
   </data>
-  <data name="groupBox_SIGN_Options.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="tabPageSign.Text" xml:space="preserve">
     <value>Ký</value>
-  </data>
-  <data name="tabPageSign.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="zipalignOutputDirChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 17</value>
@@ -1021,17 +580,11 @@
   <data name="zipalignOutputDirChkBox.Text" xml:space="preserve">
     <value>Thư mục đầu ra APK:</value>
   </data>
-  <data name="zipalignOutputDirChkBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="signAfterZipalignChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 17</value>
   </data>
   <data name="signAfterZipalignChkBox.Text" xml:space="preserve">
     <value>Ký sau khi zip căn chỉnh</value>
-  </data>
-  <data name="signAfterZipalignChkBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_ZIPALIGN_Recompress.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 17</value>
@@ -1039,20 +592,11 @@
   <data name="checkBox_ZIPALIGN_Recompress.Text" xml:space="preserve">
     <value>Nén lại bằng Zopfli</value>
   </data>
-  <data name="checkBox_ZIPALIGN_Recompress.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label_ZIPALIGN_AlignmentBytes.Size" type="System.Drawing.Size, System.Drawing">
     <value>301, 13</value>
   </data>
   <data name="label_ZIPALIGN_AlignmentBytes.Text" xml:space="preserve">
     <value>Căn chỉnh theo bytes, ví dụ: '4' cung cấp căn chỉnh 32-bit</value>
-  </data>
-  <data name="label_ZIPALIGN_AlignmentBytes.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_ZIPALIGN_BrowseOutputFile.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_ZIPALIGN_CheckAlignment.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 17</value>
@@ -1060,23 +604,11 @@
   <data name="checkBox_ZIPALIGN_CheckAlignment.Text" xml:space="preserve">
     <value>Chỉ kiểm tra căn chỉnh (không sửa đổi tệp)</value>
   </data>
-  <data name="checkBox_ZIPALIGN_CheckAlignment.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_ZIPALIGN_OutputFile.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_ZIPALIGN_VerboseOutput.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 17</value>
   </data>
   <data name="checkBox_ZIPALIGN_VerboseOutput.Text" xml:space="preserve">
     <value>Đầu ra chi tiết</value>
-  </data>
-  <data name="checkBox_ZIPALIGN_VerboseOutput.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="numericUpDown_ZIPALIGN_AlignmentBytes.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_ZIPALIGN_OverwriteOutputFile.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 17</value>
@@ -1084,32 +616,17 @@
   <data name="checkBox_ZIPALIGN_OverwriteOutputFile.Text" xml:space="preserve">
     <value>Ghi đè lên tệp đầu ra hiện có</value>
   </data>
-  <data name="checkBox_ZIPALIGN_OverwriteOutputFile.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="groupBox_ZIPALIGN_Options.Text" xml:space="preserve">
     <value>Tùy chọn</value>
-  </data>
-  <data name="groupBox_ZIPALIGN_Options.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="tabPageZipAlign.Text" xml:space="preserve">
     <value>Zip căn chỉnh</value>
   </data>
-  <data name="tabPageZipAlign.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="openFwFolderBtn.Text" xml:space="preserve">
     <value>Mở thư mục framework</value>
   </data>
-  <data name="openFwFolderBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="clearFwBtn.Text" xml:space="preserve">
     <value>Xóa bộ nhớ cache framework</value>
-  </data>
-  <data name="clearFwBtn.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="clearFwBeforeDecodeChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 17</value>
@@ -1117,14 +634,8 @@
   <data name="clearFwBeforeDecodeChkBox.Text" xml:space="preserve">
     <value>Xóa bộ nhớ cache Framework trước khi giải mã</value>
   </data>
-  <data name="clearFwBeforeDecodeChkBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Tùy chọn</value>
-  </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="checkBox_IF_Tag.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 17</value>
@@ -1132,47 +643,17 @@
   <data name="checkBox_IF_Tag.Text" xml:space="preserve">
     <value>Thẻ framework được sử dụng:</value>
   </data>
-  <data name="checkBox_IF_Tag.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="checkBox_IF_FramePath.Size" type="System.Drawing.Size, System.Drawing">
     <value>147, 17</value>
   </data>
   <data name="checkBox_IF_FramePath.Text" xml:space="preserve">
     <value>Lưu tệp framework vào:</value>
   </data>
-  <data name="checkBox_IF_FramePath.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_IF_Tag.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="button_IF_InstallFramework.Text" xml:space="preserve">
     <value>Cài đặt</value>
   </data>
-  <data name="button_IF_InstallFramework.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_IF_BrowseFrameDir.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="button_IF_BrowseInputFramePath.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_IF_InputFramePath.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="textBox_IF_FrameDir.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="groupBox_IF_Options.Text" xml:space="preserve">
     <value>Tùy chọn</value>
-  </data>
-  <data name="groupBox_IF_Options.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPageInstallFramework.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 13</value>
@@ -1180,38 +661,14 @@
   <data name="label29.Text" xml:space="preserve">
     <value>Thư mục biên dịch Smali:</value>
   </data>
-  <data name="label29.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="smaliUseOutputChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 17</value>
   </data>
   <data name="smaliUseOutputChkBox.Text" xml:space="preserve">
     <value>Thư mục đầu ra Dex:</value>
   </data>
-  <data name="smaliUseOutputChkBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="comSmaliBtn.Text" xml:space="preserve">
     <value>Biên dịch</value>
-  </data>
-  <data name="comSmaliBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="smaliBrowseOutputBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="smaliBrowseInputDirTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="smaliBrowseOutputTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="smaliBrowseInputDirBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="smaliGroupBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 13</value>
@@ -1219,47 +676,14 @@
   <data name="label28.Text" xml:space="preserve">
     <value>Giải mã dex</value>
   </data>
-  <data name="label28.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="baksmaliUseOutputChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 17</value>
   </data>
   <data name="baksmaliUseOutputChkBox.Text" xml:space="preserve">
     <value>Thư mục đầu ra:</value>
   </data>
-  <data name="baksmaliUseOutputChkBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="baksmaliBrowseOutputBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="baksmaliBrowseOutputTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="decSmaliBtn.Text" xml:space="preserve">
     <value>Giải mã</value>
-  </data>
-  <data name="decSmaliBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="baksmaliBrowseInputDexBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="baksmaliBrowseInputDexTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="bakSmaliGroupBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPageBaksmali.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="overrideAbiComboBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="selAdbDeviceLbl.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 13</value>
@@ -1267,32 +691,14 @@
   <data name="label33.Text" xml:space="preserve">
     <value>Chọn thiết bị</value>
   </data>
-  <data name="label33.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="killAdbBtn.Text" xml:space="preserve">
     <value>Kết thúc tiến trình ADB</value>
-  </data>
-  <data name="killAdbBtn.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="installApkBtn.Text" xml:space="preserve">
     <value>Cài đặt APK</value>
   </data>
-  <data name="installApkBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="refreshDevicesBtn.Text" xml:space="preserve">
     <value>Làm mới</value>
-  </data>
-  <data name="refreshDevicesBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="selApkAdbBtn.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="overrideAbiCheckBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="setVendorChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>289, 17</value>
@@ -1300,29 +706,11 @@
   <data name="setVendorChkBox.Text" xml:space="preserve">
     <value>Đặt vendor thành Play Store (com.android.vending)</value>
   </data>
-  <data name="setVendorChkBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="apkPathAdbTxtBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 13</value>
   </data>
   <data name="label32.Text" xml:space="preserve">
     <value>Chọn APK</value>
-  </data>
-  <data name="label32.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="devicesListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabPageAdb.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="tabControlMain.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="toolStripStatusLabelStateText.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1566,9 +954,6 @@
   <data name="toolStripStatusLabelStateText.Text" xml:space="preserve">
     <value>Đang tải...</value>
   </data>
-  <data name="statusStrip1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="copyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 22</value>
   </data>
@@ -1580,12 +965,6 @@
   </data>
   <data name="contextMenuStripLog.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 48</value>
-  </data>
-  <data name="contextMenuStripLog.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="logTxtBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="newInsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 22</value>
@@ -1667,9 +1046,6 @@
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Trợ giúp</value>
-  </data>
-  <data name="menuStrip1.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3336,8 +2712,5 @@
         ///2AAAAAAAAb////////////EAAAAAAAj////////////+QAAAAAAn/////////////8gAAAABP////
         //////////w4AAAcP///////
 </value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

@@ -34,6 +34,7 @@ namespace APKToolGUI
             public const string OutputDir = " -o"; //The name of folder that gets written. Default is apk.out
             public const string OnlyMainClasses = " -only-main-classes"; //Only disassemble the main dex classes (classes[0-9]*.dex) in the root.
             public const string ApiLevel = " -api"; //The numeric api-level of the file to generate, e.g. 14 for ICS.
+            public const string Jobs = " -j"; // Sets the number of threads to use.
         }
 
         static class BuildKeys
@@ -47,6 +48,7 @@ namespace APKToolGUI
             public const string ApiLevel = " -api"; //The numeric api-level of the file to generate, e.g. 14 for ICS.
             public const string UseAapt2 = " --use-aapt2"; //Upgrades apktool to use experimental aapt2 binary.
             public const string NetSecConf = " --net-sec-conf"; //Add a generic Network Security Configuration file in the output APK
+            public const string Jobs = " -j"; // Sets the number of threads to use.
         }
 
         static class InstallFrameworkKeys
@@ -138,6 +140,8 @@ namespace APKToolGUI
                 keyFramePath = String.Format("{0} \"{1}\"", DecompileKeys.FrameworkPath, Program.STANDALONE_FRAMEWORK_DIR);
             if (Settings.Default.Decode_SetApiLevel)
                 apiLevel = String.Format("{0} {1}", DecompileKeys.ApiLevel, Settings.Default.Decode_ApiLevel);
+            if (Settings.Default.Decode_SetJobs)
+                apiLevel = String.Format("{0} {1}", DecompileKeys.Jobs, Settings.Default.Decode_Jobs);
             keyOutputDir = String.Format("{0} \"{1}\"", DecompileKeys.OutputDir, outputDir);
 
             string args = String.Format($"d{keyNoSrc}{keyNoRes}{keyForce}{onlyMainClasses}{noDebugInfo}{keyMatchOriginal}{keyFramePath}{keyKeepBrokenRes}{apiLevel}{keyOutputDir} \"{inputPath}\"");
@@ -185,9 +189,11 @@ namespace APKToolGUI
             if (Settings.Default.Build_UseFramework)
                 keyFramePath = String.Format("{0} \"{1}\"", BuildKeys.FrameworkPath, Settings.Default.Framework_FrameDir);
             else
-                keyFramePath = String.Format("{0} \"{1}\"", DecompileKeys.FrameworkPath, Program.STANDALONE_FRAMEWORK_DIR);
+                keyFramePath = String.Format("{0} \"{1}\"", BuildKeys.FrameworkPath, Program.STANDALONE_FRAMEWORK_DIR);
             if (Settings.Default.Build_SetApiLevel)
-                apiLevel = String.Format("{0} {1}", DecompileKeys.ApiLevel, Settings.Default.Build_ApiLevel);
+                apiLevel = String.Format("{0} {1}", BuildKeys.ApiLevel, Settings.Default.Build_ApiLevel);
+            if (Settings.Default.Build_SetJobs)
+                apiLevel = String.Format("{0} {1}", BuildKeys.Jobs, Settings.Default.Build_Jobs);
             if (Settings.Default.Build_UseAapt2)
                 useAapt2 = BuildKeys.UseAapt2;
             if (Settings.Default.Build_NetSecConf)
