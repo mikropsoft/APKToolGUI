@@ -14,7 +14,6 @@ using System.Collections.Generic;
 using APKToolGUI.Handlers;
 using Microsoft.WindowsAPICodePack.Taskbar;
 using System.Media;
-using Ionic.Zip;
 using System.Linq;
 using System.Windows.Interop;
 using System.Security.Cryptography;
@@ -22,6 +21,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using APKToolGUI.Controls;
 using Dark.Net;
 using APKEasyTool;
+using System.IO.Compression;
 
 namespace APKToolGUI
 {
@@ -260,31 +260,35 @@ namespace APKToolGUI
                         {
                             Directory.CreateDirectory(splitPath);
 
-                            using (ZipFile zipDest = ZipFile.Read(file))
+                            using (ZipArchive archive = ZipFile.OpenRead(file))
                             {
                                 bool mainApkFound = false;
-                                foreach (ZipEntry entry in zipDest.Entries)
+
+                                foreach (ZipArchiveEntry entry in archive.Entries)
                                 {
-                                    if (!mainApkFound && !entry.FileName.Contains("config.") && entry.FileName.EndsWith(".apk"))
+                                    if (!mainApkFound && !entry.FullName.Contains("config.") && entry.FullName.EndsWith(".apk"))
                                     {
-                                        Debug.WriteLine("Found main APK" + entry.FileName);
-                                        entry.Extract(splitPath, ExtractExistingFileAction.OverwriteSilently);
-                                        file = Path.Combine(splitPath, entry.FileName);
+                                        Debug.WriteLine("Found main APK: " + entry.FullName);
+                                        string extractPath = Path.Combine(splitPath, entry.FullName);
+                                        Directory.CreateDirectory(Path.GetDirectoryName(extractPath));
+                                        entry.ExtractToFile(extractPath, true);
+                                        file = extractPath;
                                         mainApkFound = true;
                                     }
-                                    if (entry.FileName.Contains("lib/armeabi-v7a"))
+
+                                    if (entry.FullName.Contains("lib/armeabi-v7a"))
                                     {
                                         arch += "armeabi-v7a, ";
                                     }
-                                    if (entry.FileName.Contains("lib/arm64-v8a"))
+                                    if (entry.FullName.Contains("lib/arm64-v8a"))
                                     {
                                         arch += "arm64-v8a, ";
                                     }
-                                    if (entry.FileName.Contains("lib/x86"))
+                                    if (entry.FullName.Contains("lib/x86"))
                                     {
                                         arch += "x86, ";
                                     }
-                                    if (entry.FileName.Contains("lib/x86_64"))
+                                    if (entry.FullName.Contains("lib/x86_64"))
                                     {
                                         arch += "x86_64, ";
                                     }

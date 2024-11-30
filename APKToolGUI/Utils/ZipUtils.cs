@@ -1,169 +1,145 @@
-﻿using Ionic.Zip;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
 
 namespace APKToolGUI.Utils
 {
     public class ZipUtils
     {
-        public static void ExtractAllStream(string path, string embeddedZip)
-        {
-            Assembly _assembly = Assembly.GetExecutingAssembly();
-            Stream _zipFileStream = _assembly.GetManifestResourceStream(embeddedZip);
-            using (ZipFile zipFile = ZipFile.Read(_zipFileStream))
-            {
-                zipFile.ExtractAll(path);
-            }
-        }
-
         public static string GetFileName(string path, string fileNameContains, string folderContains = "")
         {
-            using (ZipFile zipDest = ZipFile.Read(path))
+            using (ZipArchive archive = ZipFile.OpenRead(path))
             {
-                foreach (ZipEntry entry in zipDest.Entries)
-                {
-                    if (entry.FileName.Contains(fileNameContains) && entry.FileName.Contains(folderContains))
-                        return Path.GetFileName(entry.FileName);
-                }
+                var entry = archive.Entries
+                    .FirstOrDefault(e => e.FullName.Contains(fileNameContains) &&
+                                         (string.IsNullOrEmpty(folderContains) || e.FullName.Contains(folderContains)));
+                return entry != null ? Path.GetFileName(entry.FullName) : string.Empty;
             }
-            return "";
         }
 
         public static string GetFileNameWithoutExtension(string path, string fileNameContains, string folderContains = "")
         {
-            using (ZipFile zipDest = ZipFile.Read(path))
+            using (ZipArchive archive = ZipFile.OpenRead(path))
             {
-                foreach (ZipEntry entry in zipDest.Entries)
-                {
-                    if (entry.FileName.Contains(fileNameContains) && entry.FileName.Contains(folderContains))
-                        return Path.GetFileNameWithoutExtension(entry.FileName);
-                }
+                var entry = archive.Entries
+                    .FirstOrDefault(e => e.FullName.Contains(fileNameContains) &&
+                                         (string.IsNullOrEmpty(folderContains) || e.FullName.Contains(folderContains)));
+                return entry != null ? Path.GetFileNameWithoutExtension(entry.FullName) : string.Empty;
             }
-            return "";
         }
+
         public static bool Exists(string path, string fileNameContains, string folderContains = "")
         {
-            using (ZipFile zipDest = ZipFile.Read(path))
+            using (ZipArchive archive = ZipFile.OpenRead(path))
             {
-                foreach (ZipEntry entry in zipDest.Entries)
-                {
-                    if (entry.FileName.Contains(fileNameContains) && String.IsNullOrEmpty(folderContains))
-                        return true;
-                    else if (entry.FileName.Contains(fileNameContains) && entry.FileName.Contains(folderContains))
-                        return true;
-                }
+                return archive.Entries.Any(e => e.FullName.Contains(fileNameContains) &&
+                                                (string.IsNullOrEmpty(folderContains) || e.FullName.Contains(folderContains)));
             }
-            return false;
         }
 
         public static void AddFile(string zipFile, string fileName, string directoryPathInArchive = "")
         {
-            using (ZipFile zip = ZipFile.Read(zipFile))
+            using (FileStream fs = new FileStream(zipFile, FileMode.OpenOrCreate))
+            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Update))
             {
-                if (!String.IsNullOrEmpty(directoryPathInArchive))
-                    zip.AddFile(fileName, directoryPathInArchive);
-                else
-                    zip.AddFile(fileName);
-                zip.Save();
+                string entryName = string.IsNullOrEmpty(directoryPathInArchive) ? fileName : $"{directoryPathInArchive}/{Path.GetFileName(fileName)}";
+                archive.CreateEntryFromFile(fileName, entryName);
             }
         }
 
         public static void UpdateFile(string zipFile, string fileName, string directoryPathInArchive = "")
         {
-            using (ZipFile zip = ZipFile.Read(zipFile))
-            {
-                if (!String.IsNullOrEmpty(directoryPathInArchive))
-                    zip.UpdateFile(fileName, directoryPathInArchive);
-                else
-                    zip.UpdateFile(fileName);
-                zip.Save();
-            }
+            RemoveFile(zipFile, fileName);
+            AddFile(zipFile, fileName, directoryPathInArchive);
         }
 
         public static void RemoveFile(string zipFile, string fileName)
         {
-            using (ZipFile zip = ZipFile.Read(zipFile))
+            using (FileStream fs = new FileStream(zipFile, FileMode.OpenOrCreate))
+            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Update))
             {
-                bool chkresult2 = zip.Any(entry => entry.FileName.Contains(fileName));
-                if (chkresult2)
-                {
-                    zip.RemoveEntry(fileName);
-                    zip.Save();
-                }
+                var entry = archive.Entries.FirstOrDefault(e => e.FullName.Contains(fileName));
+                entry?.Delete();
             }
         }
 
         public static void ExtractFile(string path, string fileName, string destination)
         {
-            using (ZipFile zip = ZipFile.Read(path))
+            using (ZipArchive archive = ZipFile.OpenRead(path))
             {
-                bool chkresult2 = zip.Any(entry => entry.FileName.Contains(fileName));
-                if (chkresult2)
-                {
-                    zip.FlattenFoldersOnExtract = true;
-                    ZipEntry e = zip[fileName];
-                    e.Extract(destination, ExtractExistingFileAction.OverwriteSilently);
-                }
+                var entry = archive.Entries.FirstOrDefault(e => e.FullName.Contains(fileName));
+                entry?.ExtractToFile(Path.Combine(destination, Path.GetFileName(entry.FullName)), true);
             }
         }
 
         public static void ExtractAll(string path, string destination, bool flattenFoldersOnExtract = false)
         {
-            using (ZipFile zip = ZipFile.Read(path))
+            using (ZipArchive archive = ZipFile.OpenRead(path))
             {
-                zip.FlattenFoldersOnExtract = flattenFoldersOnExtract;
-                zip.ExtractAll(destination, ExtractExistingFileAction.OverwriteSilently);
+                foreach (var entry in archive.Entries)
+                {
+                    string fullPath = flattenFoldersOnExtract
+                        ? Path.Combine(destination, Path.GetFileName(entry.FullName))
+                        : Path.Combine(destination, entry.FullName);
+                    string directoryPath = Path.GetDirectoryName(fullPath);
+                    if (!string.IsNullOrEmpty(directoryPath)) Directory.CreateDirectory(directoryPath);
+                    entry.ExtractToFile(fullPath, true);
+                }
             }
         }
 
-        public static void AddDirectory(string path, string fileName, string directoryPathInArchive = "")
+        public static void AddDirectory(string path, string directoryPath, string directoryPathInArchive = "")
         {
-            ZipFile zip = new ZipFile();
-            if (!String.IsNullOrEmpty(directoryPathInArchive))
-                zip.AddDirectory(fileName, directoryPathInArchive);
-            else
-                zip.AddDirectory(fileName);
-            zip.Save(path);
+            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Update))
+            {
+                foreach (string filePath in Directory.GetFiles(directoryPath, "*.*", SearchOption.AllDirectories))
+                {
+                    string entryName = string.IsNullOrEmpty(directoryPathInArchive)
+                        ? filePath.Substring(directoryPath.Length + 1)
+                        : Path.Combine(directoryPathInArchive, filePath.Substring(directoryPath.Length + 1));
+                    archive.CreateEntryFromFile(filePath, entryName.Replace("\\", "/"));
+                }
+            }
         }
 
-        public static void UpdateDirectory(string path, string dirName, string directoryPathInArchive = "")
+        public static void UpdateDirectory(string path, string directoryPath, string directoryPathInArchive = "")
         {
-            using (ZipFile zip = ZipFile.Read(path))
+            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Update))
             {
-                if (!String.IsNullOrEmpty(directoryPathInArchive))
-                    zip.UpdateDirectory(dirName, directoryPathInArchive);
-                else
-                    zip.UpdateDirectory(dirName);
-                zip.Save();
+                foreach (string filePath in Directory.GetFiles(directoryPath, "*.*", SearchOption.AllDirectories))
+                {
+                    string entryName = string.IsNullOrEmpty(directoryPathInArchive)
+                        ? filePath.Substring(directoryPath.Length + 1)
+                        : Path.Combine(directoryPathInArchive, filePath.Substring(directoryPath.Length + 1));
+                    RemoveFile(path, entryName.Replace("\\", "/"));
+                    archive.CreateEntryFromFile(filePath, entryName.Replace("\\", "/"));
+                }
             }
         }
 
         public static void ExtractDirectory(string path, string folderName, string destination, bool flattenFoldersOnExtract = false)
         {
-            //using (ZipFile zip = ZipFile.Read(path))
-            //{
-            //    bool chkresult2 = zip.Any(entry => entry.FileName.Contains(folderName));
-            //    if (chkresult2)
-            //    {
-            //        zip.FlattenFoldersOnExtract = flattenFoldersOnExtract;
-            //        zip.ExtractSelectedEntries("name = *", folderName, destination, ExtractExistingFileAction.OverwriteSilently);
-            //    }
-            //}
-            using (ZipFile zip = ZipFile.Read(path))
+            using (ZipArchive archive = ZipFile.OpenRead(path))
             {
-                zip.FlattenFoldersOnExtract = flattenFoldersOnExtract;
-                foreach (ZipEntry e in zip.Where(x => x.FileName.Contains(folderName)))
+                foreach (ZipArchiveEntry entry in archive.Entries.Where(e => e.FullName.Contains(folderName)))
                 {
-                    e.Extract(destination, ExtractExistingFileAction.OverwriteSilently);
+                    string extractPath = flattenFoldersOnExtract
+                        ? Path.Combine(destination, Path.GetFileName(entry.FullName))
+                        : Path.Combine(destination, entry.FullName);
+
+                    string directoryPath = Path.GetDirectoryName(extractPath);
+                    if (!string.IsNullOrEmpty(directoryPath))
+                    {
+                        Directory.CreateDirectory(directoryPath);
+                    }
+
+                    entry.ExtractToFile(extractPath, true);
                 }
             }
         }
-
     }
 }
