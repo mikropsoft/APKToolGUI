@@ -462,9 +462,6 @@
   <data name="ErrorMerging" xml:space="preserve">
     <value>合并失败</value>
   </data>
-  <data name="ExtractOrigSignature" xml:space="preserve">
-    <value>提取原始签名</value>
-  </data>
   <data name="MergingApkEditor" xml:space="preserve">
     <value>使用 APKEditor.jar 合并 APK</value>
   </data>

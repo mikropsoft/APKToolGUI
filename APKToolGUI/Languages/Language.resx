@@ -462,9 +462,6 @@
   <data name="ErrorMerging" xml:space="preserve">
     <value>Merging failed</value>
   </data>
-  <data name="ExtractOrigSignature" xml:space="preserve">
-    <value>Extract original signature</value>
-  </data>
   <data name="MergingApkEditor" xml:space="preserve">
     <value>Merging APK using APKEditor.jar</value>
   </data>
@@ -542,5 +539,8 @@
   </data>
   <data name="CantDetectApkeditorVersion" xml:space="preserve">
     <value>Can't detect APKEditor version</value>
+  </data>
+  <data name="SetLanguageRestartApplication" xml:space="preserve">
+    <value />
   </data>
 </root>

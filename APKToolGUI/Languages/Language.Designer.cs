@@ -745,15 +745,6 @@ namespace APKToolGUI.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Extract original signature.
-        /// </summary>
-        internal static string ExtractOrigSignature {
-            get {
-                return ResourceManager.GetString("ExtractOrigSignature", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to File.
         /// </summary>
         internal static string File {
@@ -1110,6 +1101,15 @@ namespace APKToolGUI.Languages {
         internal static string RestartApplicationPrompt {
             get {
                 return ResourceManager.GetString("RestartApplicationPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string SetLanguageRestartApplication {
+            get {
+                return ResourceManager.GetString("SetLanguageRestartApplication", resourceCulture);
             }
         }
         

@@ -599,7 +599,6 @@ namespace APKToolGUI
 
             string tempApk = Path.Combine(Program.TEMP_PATH, "dec.apk");
             string tempDecApk = Path.Combine(Program.TEMP_PATH, "dec");
-            string decOrigDir = Path.Combine(tempDecApk, "original");
 
             string splitDir = Path.Combine(Program.TEMP_PATH, "SplitTmp");
             string extractedDir = Path.Combine(splitDir, "ExtractedApks");
@@ -647,15 +646,6 @@ namespace APKToolGUI
 
                         if (code == 0)
                         {
-                            ToLog(ApktoolEventType.None, Language.ExtractOrigSignature);
-
-                            foreach (string apk in apkfiles)
-                            {
-                                ZipUtils.ExtractDirectory(apk, "META-INF", decOrigDir);
-                                ZipUtils.ExtractFile(apk, "stamp-cert-sha256", decOrigDir);
-                                break;
-                            }
-
                             ToLog(ApktoolEventType.None, String.Format(Language.MoveTempApkFileToOutput, tempDecApk, outputDir));
                             DirectoryUtils.Delete(outputDir);
                             DirectoryUtils.Copy(tempDecApk, outputDir);
@@ -833,8 +823,10 @@ namespace APKToolGUI
                 outputDir = Path.Combine(Settings.Default.Decode_OutputDir, Path.GetFileNameWithoutExtension(inputApk));
 
             string tempApk = Path.Combine(Program.TEMP_PATH, "dec.apk");
+            string tempDecApk = Path.Combine(Program.TEMP_PATH, "dec");
             string outputTempDir = tempApk.Replace(".apk", "");
             string outputDecDir = outputDir;
+            string decOrigDir = Path.Combine(tempDecApk, "original");
 
             try
             {
@@ -969,7 +961,8 @@ namespace APKToolGUI
                             if (Directory.Exists(Path.Combine(inputFolder, "original", "META-INF")))
                             {
                                 string unsignedApkPath = Path.Combine(Path.GetDirectoryName(outputCompiledApkFile), Path.GetFileName(outputUnsignedApk));
-                                ZipUtils.UpdateDirectory(outputFile, Path.Combine(inputFolder, "original", "META-INF"), "META-INF");
+                                ZipUtils.AddDirectory(outputFile, Path.Combine(inputFolder, "original", "META-INF"), "META-INF");
+                                ZipUtils.AddFile(outputFile, Path.Combine(inputFolder, "original", "stamp-cert-sha256"));
                                 ToLog(ApktoolEventType.Infomation, String.Format(Language.CopyFileTo, outputFile, unsignedApkPath));
                                 File.Copy(outputFile, unsignedApkPath, true);
                             }

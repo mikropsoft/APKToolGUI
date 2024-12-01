@@ -33,15 +33,18 @@ namespace APKToolGUI.Utils
             return Path.Combine(Path.GetDirectoryName(path), Path.GetFileNameWithoutExtension(path));
         }
 
-        public static string GetRelativePath(string relativeTo, string path)
+        public static string GetRelativePath(string basePath, string fullPath)
         {
-            var uri = new Uri(relativeTo);
-            var rel = Uri.UnescapeDataString(uri.MakeRelativeUri(new Uri(path)).ToString()).Replace(Path.AltDirectorySeparatorChar, Path.DirectorySeparatorChar);
-            if (rel.Contains(Path.DirectorySeparatorChar.ToString()) == false)
+            // Ensure both paths are absolute
+            basePath = Path.GetFullPath(basePath);
+            fullPath = Path.GetFullPath(fullPath);
+
+            if (!fullPath.StartsWith(basePath, StringComparison.OrdinalIgnoreCase))
             {
-                rel = $".{Path.DirectorySeparatorChar}{rel}";
+                throw new ArgumentException("The fullPath is not within the basePath.");
             }
-            return rel;
+
+            return fullPath.Substring(basePath.Length).TrimStart(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
         }
     }
 }

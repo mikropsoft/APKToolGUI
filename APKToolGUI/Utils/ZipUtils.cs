@@ -39,20 +39,28 @@ namespace APKToolGUI.Utils
             }
         }
 
-        public static void AddFile(string zipFile, string fileName, string directoryPathInArchive = "")
+        public static void AddFile(string zipPath, string filePath, string targetFolderInZip = "")
         {
-            using (FileStream fs = new FileStream(zipFile, FileMode.OpenOrCreate))
-            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Update))
+            using (FileStream zipToOpen = new FileStream(zipPath, FileMode.Open))
             {
-                string entryName = string.IsNullOrEmpty(directoryPathInArchive) ? fileName : $"{directoryPathInArchive}/{Path.GetFileName(fileName)}";
-                archive.CreateEntryFromFile(fileName, entryName);
-            }
-        }
+                using (ZipArchive archive = new ZipArchive(zipToOpen, ZipArchiveMode.Update))
+                {
+                    // Combine the target folder with the file name to create the entry path
+                    string fileName = Path.GetFileName(filePath);
+                    string entryPath = string.IsNullOrEmpty(targetFolderInZip)
+                        ? fileName
+                        : Path.Combine(targetFolderInZip, fileName).Replace("\\", "/");
 
-        public static void UpdateFile(string zipFile, string fileName, string directoryPathInArchive = "")
-        {
-            RemoveFile(zipFile, fileName);
-            AddFile(zipFile, fileName, directoryPathInArchive);
+                    // Remove the entry if it already exists
+                    var existingEntry = archive.GetEntry(entryPath);
+                    existingEntry?.Delete();
+
+                    // Add the file to the archive
+                    archive.CreateEntryFromFile(filePath, entryPath, CompressionLevel.Optimal);
+
+                    Console.WriteLine($"Added '{filePath}' to ZIP archive at '{entryPath}'.");
+                }
+            }
         }
 
         public static void RemoveFile(string zipFile, string fileName)
@@ -90,35 +98,47 @@ namespace APKToolGUI.Utils
             }
         }
 
-        public static void AddDirectory(string path, string directoryPath, string directoryPathInArchive = "")
+        public static void AddDirectory(string zipPath, string directoryPath, string directoryPathInArchive = "")
         {
-            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
-            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Update))
+            if (!File.Exists(zipPath))
             {
-                foreach (string filePath in Directory.GetFiles(directoryPath, "*.*", SearchOption.AllDirectories))
+                Console.WriteLine("ZIP file does not exist.");
+                return;
+            }
+
+            using (FileStream zipToOpen = new FileStream(zipPath, FileMode.Open))
+            {
+                using (ZipArchive archive = new ZipArchive(zipToOpen, ZipArchiveMode.Update))
                 {
-                    string entryName = string.IsNullOrEmpty(directoryPathInArchive)
-                        ? filePath.Substring(directoryPath.Length + 1)
-                        : Path.Combine(directoryPathInArchive, filePath.Substring(directoryPath.Length + 1));
-                    archive.CreateEntryFromFile(filePath, entryName.Replace("\\", "/"));
+                    foreach (string filePath in Directory.GetFiles(directoryPath, "*", SearchOption.AllDirectories))
+                    {
+                        // Calculate the relative path and prepend the target folder inside the ZIP
+                        string relativePath = GetRelativePath(directoryPath, filePath);
+                        string entryPath = Path.Combine(directoryPathInArchive, relativePath).Replace("\\", "/");
+
+                        // Remove the entry if it already exists
+                        var existingEntry = archive.GetEntry(entryPath);
+                        existingEntry?.Delete();
+
+                        // Add the file to the archive
+                        archive.CreateEntryFromFile(filePath, entryPath, CompressionLevel.Optimal);
+                    }
                 }
             }
         }
 
-        public static void UpdateDirectory(string path, string directoryPath, string directoryPathInArchive = "")
+        static string GetRelativePath(string basePath, string fullPath)
         {
-            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
-            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Update))
+            // Ensure both paths are absolute
+            basePath = Path.GetFullPath(basePath);
+            fullPath = Path.GetFullPath(fullPath);
+
+            if (!fullPath.StartsWith(basePath, StringComparison.OrdinalIgnoreCase))
             {
-                foreach (string filePath in Directory.GetFiles(directoryPath, "*.*", SearchOption.AllDirectories))
-                {
-                    string entryName = string.IsNullOrEmpty(directoryPathInArchive)
-                        ? filePath.Substring(directoryPath.Length + 1)
-                        : Path.Combine(directoryPathInArchive, filePath.Substring(directoryPath.Length + 1));
-                    RemoveFile(path, entryName.Replace("\\", "/"));
-                    archive.CreateEntryFromFile(filePath, entryName.Replace("\\", "/"));
-                }
+                throw new ArgumentException("The fullPath is not within the basePath.");
             }
+
+            return fullPath.Substring(basePath.Length).TrimStart(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
         }
 
         public static void ExtractDirectory(string path, string folderName, string destination, bool flattenFoldersOnExtract = false)

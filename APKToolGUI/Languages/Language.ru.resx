@@ -429,9 +429,6 @@
   <data name="ParsingApkInfo" xml:space="preserve">
     <value>Чтение информации о APK...</value>
   </data>
-  <data name="SetLanguageRestartApplication" xml:space="preserve">
-    <value>Язык установлен. Хотите перезапустить программу?</value>
-  </data>
   <data name="DecompilingAllApkFiles" xml:space="preserve">
     <value>Декомпиляция всех APK файлов</value>
   </data>
@@ -461,9 +458,6 @@
   </data>
   <data name="ErrorMerging" xml:space="preserve">
     <value>Ошибка при слиянии</value>
-  </data>
-  <data name="ExtractOrigSignature" xml:space="preserve">
-    <value>Извлечение оригинальной подписи</value>
   </data>
   <data name="MergingApkEditor" xml:space="preserve">
     <value>Слияние APK с помощью APKEditor.jar</value>
@@ -515,5 +509,8 @@
   </data>
   <data name="ClearFrameworkPrompt" xml:space="preserve">
     <value>После изменения версии Apktool необходимо очистить кеш. Вы хотите очистить его сейчас?</value>
+  </data>
+  <data name="SetLanguageRestartApplication" xml:space="preserve">
+    <value>Язык установлен. Хотите перезапустить программу?</value>
   </data>
 </root>

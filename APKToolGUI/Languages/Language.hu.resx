@@ -429,9 +429,6 @@
   <data name="ParsingApkInfo" xml:space="preserve">
     <value>APK információk elemzése...</value>
   </data>
-  <data name="SetLanguageRestartApplication" xml:space="preserve">
-    <value>A nyelv be van állítva. Újra akarja indítani az alkalmazást?</value>
-  </data>
   <data name="DecompilingAllApkFiles" xml:space="preserve">
     <value>Az összes APK fájl visszafejtése</value>
   </data>
@@ -461,9 +458,6 @@
   </data>
   <data name="ErrorMerging" xml:space="preserve">
     <value>Az ˘egyesítés nem sikerült</value>
-  </data>
-  <data name="ExtractOrigSignature" xml:space="preserve">
-    <value>Az eredeti aláírás kibontása</value>
   </data>
   <data name="MergingApkEditor" xml:space="preserve">
     <value>APK egyesítése az APKEditor.jar használatával</value>
@@ -515,5 +509,8 @@
   </data>
   <data name="ClearFrameworkPrompt" xml:space="preserve">
     <value>A váratlan hibák elkerülése érdekében az Apktool verziójának módosítása után törölni kell a framework gyorsítótárát. Szeretné most törölni?</value>
+  </data>
+  <data name="SetLanguageRestartApplication" xml:space="preserve">
+    <value>A nyelv be van állítva. Újra akarja indítani az alkalmazást?</value>
   </data>
 </root>
