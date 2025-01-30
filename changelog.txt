@@ -1,3 +1,15 @@
+3.3.1.5
+- Updated Apktool and Apkeditor to latest version
+- Splitter between logs box and tab window is now draggable
+- Fixed an issue with creating unsigned APK
+
+3.3.1.4
+- Fixed issues adding original signature back to unsigned APK
+- Fixed a critical vulnerability by removing DotNetZip library and transition to System.IO.Compression
+- Added option to set threads
+- Added Vietnamese language
+- Updated Chinese Simplified language
+
 3.3.1.3
 - Updated APKTool to 2.10.0, APKEditor to 1.4.0 and all other tools
 - Minor fixes of drag and drop on merge APK section
