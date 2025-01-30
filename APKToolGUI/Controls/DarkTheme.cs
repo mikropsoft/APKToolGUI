@@ -38,6 +38,13 @@ namespace APKToolGUI.Controls
 
         public static void SetThemeTabControl(Control component, Control.ControlCollection container)
         {
+            if (component is SplitContainer)
+            {
+                foreach (Control control in component.Controls)
+                {
+                    SetThemeTabControl(control, container);
+                }
+            }
             if (component is TabControl)
             {
                 ((TabControl)component).DrawMode = TabDrawMode.OwnerDrawFixed;

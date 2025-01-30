@@ -269,6 +269,7 @@
             this.baksmaliIssuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tabControlMain.SuspendLayout();
             this.tabPageMain.SuspendLayout();
             this.mergePanel.SuspendLayout();
@@ -304,12 +305,15 @@
             this.statusStrip1.SuspendLayout();
             this.contextMenuStripLog.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
             // 
             this.tabControlMain.AllowDrop = true;
-            resources.ApplyResources(this.tabControlMain, "tabControlMain");
             this.tabControlMain.Controls.Add(this.tabPageMain);
             this.tabControlMain.Controls.Add(this.tabPageApkInfo);
             this.tabControlMain.Controls.Add(this.tabPageDecode);
@@ -319,6 +323,7 @@
             this.tabControlMain.Controls.Add(this.tabPageInstallFramework);
             this.tabControlMain.Controls.Add(this.tabPageBaksmali);
             this.tabControlMain.Controls.Add(this.tabPageAdb);
+            resources.ApplyResources(this.tabControlMain, "tabControlMain");
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
             this.tabControlMain.SelectedIndexChanged += new System.EventHandler(this.tabControlMain_SelectedIndexChanged);
@@ -2033,8 +2038,8 @@
             // 
             // logTxtBox
             // 
-            resources.ApplyResources(this.logTxtBox, "logTxtBox");
             this.logTxtBox.ContextMenuStrip = this.contextMenuStripLog;
+            resources.ApplyResources(this.logTxtBox, "logTxtBox");
             this.logTxtBox.HideSelection = false;
             this.logTxtBox.Name = "logTxtBox";
             this.logTxtBox.ReadOnly = true;
@@ -2161,15 +2166,27 @@
             this.toolTip1.InitialDelay = 500;
             this.toolTip1.ReshowDelay = 100;
             // 
+            // splitContainer1
+            // 
+            resources.ApplyResources(this.splitContainer1, "splitContainer1");
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.tabControlMain);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.logTxtBox);
+            // 
             // FormMain
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.logTxtBox);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.tabControlMain);
             this.DoubleBuffered = true;
             this.Name = "FormMain";
             this.Activated += new System.EventHandler(this.FormMain_Activated);
@@ -2226,6 +2243,10 @@
             this.contextMenuStripLog.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2472,6 +2493,7 @@
         internal System.Windows.Forms.CheckBox checkBox3;
         internal System.Windows.Forms.NumericUpDown comJobsLvlUpDown;
         internal System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }
 
