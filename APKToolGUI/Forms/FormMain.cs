@@ -962,7 +962,8 @@ namespace APKToolGUI
                             {
                                 string unsignedApkPath = Path.Combine(Path.GetDirectoryName(outputCompiledApkFile), Path.GetFileName(outputUnsignedApk));
                                 ZipUtils.AddDirectory(outputFile, Path.Combine(inputFolder, "original", "META-INF"), "META-INF");
-                                ZipUtils.AddFile(outputFile, Path.Combine(inputFolder, "original", "stamp-cert-sha256"));
+                                if (File.Exists(Path.Combine(inputFolder, "original", "stamp-cert-sha256")))
+                                    ZipUtils.AddFile(outputFile, Path.Combine(inputFolder, "original", "stamp-cert-sha256"));
                                 ToLog(ApktoolEventType.Infomation, String.Format(Language.CopyFileTo, outputFile, unsignedApkPath));
                                 File.Copy(outputFile, unsignedApkPath, true);
                             }
