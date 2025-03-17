@@ -28,7 +28,6 @@ namespace APKToolGUI.Utils
             }
             else
             {
-                MessageBox.Show("Error Loading File.", "Error!", MessageBoxButtons.OK);
                 return null;
             }
         }

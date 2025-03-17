@@ -75,8 +75,6 @@
             this.label31 = new System.Windows.Forms.Label();
             this.archSdkTxtBox = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.apkDlLinkBtn = new System.Windows.Forms.Button();
-            this.apkSosLinkBtn = new System.Windows.Forms.Button();
             this.apkMirrorLinkBtn = new System.Windows.Forms.Button();
             this.apkSupportLinkBtn = new System.Windows.Forms.Button();
             this.apkGkLinkBtn = new System.Windows.Forms.Button();
@@ -91,7 +89,6 @@
             this.fileTxtBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.densityTxtBox = new System.Windows.Forms.TextBox();
-            this.apkAioLinkBtn = new System.Windows.Forms.Button();
             this.packNameTxtBox = new System.Windows.Forms.TextBox();
             this.apkPureLinkBtn = new System.Windows.Forms.Button();
             this.verTxtBox = new System.Windows.Forms.TextBox();
@@ -610,8 +607,6 @@
             this.basicInfoTabPage.Controls.Add(this.label31);
             this.basicInfoTabPage.Controls.Add(this.archSdkTxtBox);
             this.basicInfoTabPage.Controls.Add(this.label30);
-            this.basicInfoTabPage.Controls.Add(this.apkDlLinkBtn);
-            this.basicInfoTabPage.Controls.Add(this.apkSosLinkBtn);
             this.basicInfoTabPage.Controls.Add(this.apkMirrorLinkBtn);
             this.basicInfoTabPage.Controls.Add(this.apkSupportLinkBtn);
             this.basicInfoTabPage.Controls.Add(this.apkGkLinkBtn);
@@ -626,7 +621,6 @@
             this.basicInfoTabPage.Controls.Add(this.fileTxtBox);
             this.basicInfoTabPage.Controls.Add(this.label14);
             this.basicInfoTabPage.Controls.Add(this.densityTxtBox);
-            this.basicInfoTabPage.Controls.Add(this.apkAioLinkBtn);
             this.basicInfoTabPage.Controls.Add(this.packNameTxtBox);
             this.basicInfoTabPage.Controls.Add(this.apkPureLinkBtn);
             this.basicInfoTabPage.Controls.Add(this.verTxtBox);
@@ -679,18 +673,6 @@
             // 
             resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
-            // 
-            // apkDlLinkBtn
-            // 
-            resources.ApplyResources(this.apkDlLinkBtn, "apkDlLinkBtn");
-            this.apkDlLinkBtn.Name = "apkDlLinkBtn";
-            this.apkDlLinkBtn.UseVisualStyleBackColor = true;
-            // 
-            // apkSosLinkBtn
-            // 
-            resources.ApplyResources(this.apkSosLinkBtn, "apkSosLinkBtn");
-            this.apkSosLinkBtn.Name = "apkSosLinkBtn";
-            this.apkSosLinkBtn.UseVisualStyleBackColor = true;
             // 
             // apkMirrorLinkBtn
             // 
@@ -771,12 +753,6 @@
             resources.ApplyResources(this.densityTxtBox, "densityTxtBox");
             this.densityTxtBox.Name = "densityTxtBox";
             this.densityTxtBox.ReadOnly = true;
-            // 
-            // apkAioLinkBtn
-            // 
-            resources.ApplyResources(this.apkAioLinkBtn, "apkAioLinkBtn");
-            this.apkAioLinkBtn.Name = "apkAioLinkBtn";
-            this.apkAioLinkBtn.UseVisualStyleBackColor = true;
             // 
             // packNameTxtBox
             // 
@@ -2423,7 +2399,6 @@
         internal System.Windows.Forms.Button baksmaliBrowseOutputBtn;
         internal System.Windows.Forms.TextBox baksmaliBrowseOutputTxtBox;
         internal System.Windows.Forms.Button openApktoolYmlBtn;
-        internal System.Windows.Forms.Button apkAioLinkBtn;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         internal System.Windows.Forms.Button signApkOpenDirBtn;
@@ -2435,8 +2410,6 @@
         private System.Windows.Forms.RichTextBox fullInfoTextBox;
         internal System.Windows.Forms.TabPage basicInfoTabPage;
         internal System.Windows.Forms.Button apkMirrorLinkBtn;
-        internal System.Windows.Forms.Button apkDlLinkBtn;
-        internal System.Windows.Forms.Button apkSosLinkBtn;
         internal System.Windows.Forms.Button apkSupportLinkBtn;
         internal System.Windows.Forms.Button apkGkLinkBtn;
         internal System.Windows.Forms.TextBox archSdkTxtBox;

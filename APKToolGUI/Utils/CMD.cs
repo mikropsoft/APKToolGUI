@@ -13,13 +13,12 @@ namespace APKToolGUI.Utils
 {
     public class CMD
     {
-        public static string output;
-        static public Process p = new Process();
-
         public static string ProcessStartWithOutput(string FileName, string Arguments)
         {
             Log.d("CMD: " + FileName + " " + Arguments);
+
             string result = string.Empty;
+
             try
             {
                 using (Process process = new Process())
@@ -33,13 +32,14 @@ namespace APKToolGUI.Utils
                     process.StartInfo.StandardOutputEncoding = Encoding.GetEncoding("utf-8");
                     process.Start();
                     result = process.StandardOutput.ReadToEnd().Trim();
-                    process.WaitForExit(4000);
+                    process.WaitForExit();
                 }
             }
             catch (Exception e)
             {
                 Debug.WriteLine("Start", e);
             }
+
             return result;
         }
     }

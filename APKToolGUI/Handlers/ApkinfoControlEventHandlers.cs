@@ -20,10 +20,7 @@ namespace APKToolGUI.Handlers
             main.apkPureLinkBtn.Click += apkPureLinkBtn_Click;
             main.apkGkLinkBtn.Click += apkGkLinkBtn_Click;
             main.apkSupportLinkBtn.Click += apkSupportLinkBtn_Click;
-            main.apkSosLinkBtn.Click += apkSosLinkBtn_Click;
             main.apkMirrorLinkBtn.Click += apkMirrorLinkBtn_Click;
-            main.apkAioLinkBtn.Click += apkAioLinkBtn_Click;
-            main.apkDlLinkBtn.Click += apkDlLinkBtn_Click;
         }
 
         private void selApkFileInfoBtn_Click(object sender, EventArgs e)
@@ -66,29 +63,11 @@ namespace APKToolGUI.Handlers
             if (main.aapt != null)
                 Process.Start(main.aapt.ApkSupportLink);
         }
-
-        private void apkSosLinkBtn_Click(object sender, EventArgs e)
-        {
-            if (main.aapt != null)
-                Process.Start(main.aapt.ApkSosLink);
-        }
         
         private void apkMirrorLinkBtn_Click(object sender, EventArgs e)
         {
             if (main.aapt != null)
                 Process.Start(main.aapt.ApkMirrorLink);
-        }
-        
-        private void apkAioLinkBtn_Click(object sender, EventArgs e)
-        {
-            if (main.aapt != null)
-                Process.Start(main.aapt.ApkAioLink);
-        }
-
-        private void apkDlLinkBtn_Click(object sender, EventArgs e)
-        {
-            if (main.aapt != null)
-                Process.Start(main.aapt.ApkDlLink);
         }
     }
 }

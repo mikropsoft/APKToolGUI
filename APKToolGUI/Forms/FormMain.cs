@@ -253,6 +253,8 @@ namespace APKToolGUI
                     string splitPath = Path.Combine(Program.TEMP_PATH, "SplitInfo");
                     string arch = "";
 
+                    bool parsed = false;
+
                     await Task.Factory.StartNew(() =>
                     {
                         DirectoryUtils.Delete(splitPath);
@@ -295,13 +297,7 @@ namespace APKToolGUI
                                 }
                             }
                         }
-                    });
 
-                    bool parsed = false;
-                    string signature = null;
-                    await Task.Factory.StartNew(() =>
-                    {
-                        signature = signapk.GetSignature(file);
                         aapt = new AaptParser();
                         parsed = aapt.Parse(file);
                     });
@@ -313,7 +309,6 @@ namespace APKToolGUI
                             apkIconPicBox.Image.Dispose();
                             apkIconPicBox.Image = null;
                         }
-                        sigTxtBox.Text = signature;
                         fileTxtBox.Text = aapt.ApkFile;
                         appTxtBox.Text = aapt.AppName;
                         packNameTxtBox.Text = aapt.PackageName;
@@ -332,20 +327,20 @@ namespace APKToolGUI
                             archSdkTxtBox.Text = arch.RemoveLast(", ");
                         launchActivityTxtBox.Text = aapt.LaunchableActivity;
 
-                        if (aapt.AppIcon != null)
-                        {
-                            await Task.Factory.StartNew(() =>
-                            {
-                                ZipUtils.ExtractFile(file, aapt.AppIcon, Path.Combine(Program.TEMP_PATH, aapt.PackageName));
-                            });
-                            string icon = Path.Combine(Program.TEMP_PATH, aapt.PackageName, Path.GetFileName(aapt.AppIcon));
-                            if (File.Exists(icon))
-                            {
-                                apkIconPicBox.Image = BitmapUtils.LoadBitmap(icon);
-                            }
-                        }
+                        apkIconPicBox.Image = BitmapUtils.LoadBitmap(aapt.GetIcon(file));
+
                         DirectoryUtils.Delete(splitPath);
                     }
+
+                    string signature = null;
+                    sigTxtBox.Text = "Loading...";
+
+                    await Task.Factory.StartNew(() =>
+                    {
+                        signature = signapk.GetSignature(file);
+                    });
+
+                    sigTxtBox.Text = signature;
                 }
                 catch (Exception ex)
                 {

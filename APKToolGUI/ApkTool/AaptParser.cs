@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APKToolGUI.Web;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -66,10 +67,23 @@ namespace APKToolGUI.Utils
 
         public string ApkDlLink;
 
-        public string AppIcon;
-
         public string FullInfo;
 
+        internal string AppIcon = null;
+
+        internal string AppIcon120 = null;
+
+        internal string AppIcon160 = null;
+
+        internal string AppIcon240 = null;
+
+        internal string AppIcon320 = null;
+
+        internal string AppIcon480 = null;
+
+        internal string AppIcon640 = null;
+
+        internal string AppIcon65534 = null;
 
         public bool Parse(string file)
         {
@@ -110,9 +124,6 @@ namespace APKToolGUI.Utils
                         case "application-label":
                             AppName = StringExt.Regex(@"(?<=application-label:\')(.*?)(?=\')", line);
                             break;
-                        case "application":
-                            AppIcon = GetIcon(file, StringExt.Regex(@"(?<=icon=\')(.*?)(?=\')", line));
-                            break;
                         case "launchable-activity":
                             LaunchableActivity = StringExt.Regex(@"(?<=name=\')(.*?)(?=\')", line);
                             break;
@@ -142,7 +153,17 @@ namespace APKToolGUI.Utils
                 PlayStoreLink = "https://play.google.com/store/apps/details?id=" + PackageName;
                 ApkComboLink = "https://apkcombo.com/a/" + PackageName;
                 ApkPureLink = "https://apkpure.com/a/" + PackageName;
-                ApkAioLink = "https://apkaio.com/app/" + PackageName;
+                ApkSupportLink = "https://apk.support/app/" + PackageName;
+                ApkMirrorLink = "https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=" + PackageName;
+                ApkGkLink = "https://apkgk.com/" + PackageName + "/download";
+
+                AppIcon120 = StringExt.Regex(@"(?<=application-icon-120:\')(.*?)(?=\')", FullInfo);
+                AppIcon160 = StringExt.Regex(@"(?<=application-icon-160:\')(.*?)(?=\')", FullInfo);
+                AppIcon240 = StringExt.Regex(@"(?<=application-icon-240:\')(.*?)(?=\')", FullInfo);
+                AppIcon320 = StringExt.Regex(@"(?<=application-icon-320:\')(.*?)(?=\')", FullInfo);
+                AppIcon480 = StringExt.Regex(@"(?<=application-icon-480:\')(.*?)(?=\')", FullInfo);
+                AppIcon640 = StringExt.Regex(@"(?<=application-icon-640:\')(.*?)(?=\')", FullInfo);
+                AppIcon65534 = StringExt.Regex(@"(?<=application-icon-65534:\')(.*?)(?=\')", FullInfo);
 
                 result = true;
             }
@@ -170,31 +191,77 @@ namespace APKToolGUI.Utils
                 return apkinfo;
         }
 
-        string[] iconFolder = { "mipmap-xxxhdpi-v4", "mipmap-xxhdpi-v4", "mipmap-xhdpi-v4", "mipmap-hdpi-v4", "mipmap-mdpi-v4", "mipmap-xhdpi", "mipmap-hdpi", "drawable-xxxhdpi-v4", "drawable-xxhdpi-v4", "drawable-xhdpi-v4", "drawable-hdpi-v4", "drawable-mdpi-v4" };
-
-        private string GetIcon(string apkPath, string iconPath)
+        public string GetIcon(string apkPath)
         {
-            iconPath = iconPath.Replace(".xml", ".png");
+            string[] png = { "mipmap-xxxhdpi-v4", "mipmap-xxhdpi-v4", "mipmap-xhdpi-v4", "mipmap-hdpi-v4", "mipmap-mdpi-v4", "mipmap-xhdpi", "mipmap-hdpi", "drawable-xxxhdpi-v4", "drawable-xxhdpi-v4", "drawable-xhdpi-v4", "drawable-hdpi-v4", "drawable-mdpi-v4" };
+            string icon = "";
 
-            if (iconPath.Contains("anydpi-v26"))
+            if (!string.IsNullOrEmpty(AppIcon65534))
+                icon = AppIcon65534;
+            else if (!string.IsNullOrEmpty(AppIcon640))
+                icon = AppIcon640;
+            else if (!string.IsNullOrEmpty(AppIcon480))
+                icon = AppIcon480;
+            else if (!string.IsNullOrEmpty(AppIcon320))
+                icon = AppIcon320;
+            else if (!string.IsNullOrEmpty(AppIcon240))
+                icon = AppIcon240;
+            else if (!string.IsNullOrEmpty(AppIcon160))
+                icon = AppIcon160;
+            else if (!string.IsNullOrEmpty(AppIcon120))
+                icon = AppIcon120;
+
+            icon = icon.Replace(".xml", ".png");
+
+            Debug.WriteLine("Icon: " + icon);
+
+            string cacheDir = Path.Combine(Program.TEMP_PATH, PackageName);
+            string iconLocation = Path.Combine(cacheDir, Path.GetFileName(icon));
+            Directory.CreateDirectory(cacheDir);
+
+            if (icon.Contains("anydpi-v26"))
             {
-                foreach (string folder in iconFolder)
+                foreach (string Png in png)
                 {
-                    string icon = iconPath.Replace("mipmap-anydpi-v26", folder).Replace("drawable-anydpi-v26", folder);
-
-                    if (ZipUtils.Exists(apkPath, icon))
+                    string icon2 = icon.Replace("mipmap-anydpi-v26", Png).Replace("drawable-anydpi-v26", Png);
+                    ZipUtils.ExtractFile(apkPath, icon2, cacheDir);
+                    if (File.Exists(iconLocation))
                     {
-                        Debug.WriteLine("Icon path " + icon);
-                        return icon;
+                        break;
                     }
                 }
-                return iconPath.Replace("mipmap-anydpi-v26", "mipmap-xhdpi").Replace(".xml", ".png");
+            }
+            else if (icon.Contains("v26"))
+            {
+                string icon2 = icon.Replace("v26", "v4");
+                ZipUtils.ExtractFile(apkPath, icon2, cacheDir);
+                icon2 = icon.Replace("-v26", "");
+                ZipUtils.ExtractFile(apkPath, icon2, cacheDir);
             }
             else
             {
-                Debug.WriteLine("Icon path " + iconPath);
-                return iconPath;
+                ZipUtils.ExtractFile(apkPath, icon, cacheDir);
             }
+
+            if (!File.Exists(iconLocation))
+            {
+                try
+                {
+                    WebDownload w = new WebDownload();
+                    string ps = w.DownloadString("https://play.google.com/store/apps/details?id=" + PackageName);
+                    //File.WriteAllText("R:\\t.txt", ps);
+                    string icondl = Path.Combine(cacheDir, "icon.png");
+                    Directory.CreateDirectory(cacheDir);
+                    w.DownloadFile(StringExt.Regex(@"(?<=\""image\"":\"")(.*?)(?=\"",\"")", ps), icondl);
+                    iconLocation = icondl;
+                }
+                catch
+                {
+                    
+                }
+            }
+
+            return iconLocation;
         }
 
         //https://apilevels.com/
@@ -207,7 +274,7 @@ namespace APKToolGUI.Utils
                 case "34":
                     return sdk + ": Android 14";
                 case "33":
-                    return sdk + ": Android 14";
+                    return sdk + ": Android 13";
                 case "32":
                     return sdk + ": Android 12.0L";
                 case "31":
