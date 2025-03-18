@@ -112,72 +112,6 @@ namespace APKToolGUI
             new TaskBarJumpList(Handle);
         }
 
-        private async void FormMain_Shown(object sender, EventArgs e)
-        {
-            await Task.Factory.StartNew(() =>
-            {
-                InitializeUpdateChecker();
-                InitializeZipalign();
-
-                javaPath = JavaUtils.GetJavaPath();
-                if (javaPath != null)
-                {
-                    InitializeBaksmali();
-                    InitializeSmali();
-                    InitializeAPKTool();
-                    InitializeSignapk();
-                    InitializeApkEditor();
-
-                    string javaVersion = apktool.GetJavaVersion();
-                    if (javaVersion != null)
-                    {
-                        ToLog(ApktoolEventType.None, javaVersion);
-                        string apktoolVersion = apktool.GetVersion();
-                        string apkeditorVersion = apkeditor.GetVersion();
-                        if (!String.IsNullOrWhiteSpace(apktoolVersion))
-                            ToLog(ApktoolEventType.None, String.Format(Language.APKToolVersion + " {0}", apktoolVersion));
-                        else
-                            ToLog(ApktoolEventType.Error, Language.CantDetectApktoolVersion);
-
-                        if (!String.IsNullOrWhiteSpace(apkeditorVersion))
-                            ToLog(ApktoolEventType.None, apkeditorVersion);
-                        else
-                            ToLog(ApktoolEventType.Error, Language.CantDetectApkeditorVersion);
-                    }
-                    else
-                        ToLog(ApktoolEventType.Error, Language.ErrorJavaDetect);
-                }
-                else
-                {
-                    ToLog(ApktoolEventType.Error, Language.ErrorJavaDetect);
-                    BeginInvoke(new MethodInvoker(delegate
-                    {
-                        tabPageMain.Enabled = false;
-                        tabPageBaksmali.Enabled = false;
-                        tabPageInstallFramework.Enabled = false;
-                    }));
-                }
-
-                InitializeAdb();
-
-                if (AdminUtils.IsAdministrator())
-                    ToLog(ApktoolEventType.Warning, Language.DragDropNotSupported);
-                else
-                    ToLog(ApktoolEventType.None, Language.DragDropSupported);
-
-                ToLog(ApktoolEventType.None, String.Format(Language.TempDirectory, Program.TEMP_PATH));
-
-                TimeSpan updateInterval = DateTime.Now - Settings.Default.LastUpdateCheck;
-                if (updateInterval.Days > 0 && Settings.Default.CheckForUpdateAtStartup)
-                    updateCheker.CheckAsync(true);
-            });
-            ToStatus(Language.Done, Resources.done);
-
-            RunCmdArgs();
-
-            await ListDevices();
-        }
-
         #region Context menu args
         private async void RunCmdArgs()
         {
@@ -1444,6 +1378,72 @@ namespace APKToolGUI
         #endregion
 
         #region Form handlers
+        private async void FormMain_Shown(object sender, EventArgs e)
+        {
+            await Task.Factory.StartNew(() =>
+            {
+                InitializeUpdateChecker();
+                InitializeZipalign();
+
+                javaPath = JavaUtils.GetJavaPath();
+                if (javaPath != null)
+                {
+                    InitializeBaksmali();
+                    InitializeSmali();
+                    InitializeAPKTool();
+                    InitializeSignapk();
+                    InitializeApkEditor();
+
+                    string javaVersion = apktool.GetJavaVersion();
+                    if (javaVersion != null)
+                    {
+                        ToLog(ApktoolEventType.None, javaVersion);
+                        string apktoolVersion = apktool.GetVersion();
+                        string apkeditorVersion = apkeditor.GetVersion();
+                        if (!String.IsNullOrWhiteSpace(apktoolVersion))
+                            ToLog(ApktoolEventType.None, String.Format(Language.APKToolVersion + " {0}", apktoolVersion));
+                        else
+                            ToLog(ApktoolEventType.Error, Language.CantDetectApktoolVersion);
+
+                        if (!String.IsNullOrWhiteSpace(apkeditorVersion))
+                            ToLog(ApktoolEventType.None, apkeditorVersion);
+                        else
+                            ToLog(ApktoolEventType.Error, Language.CantDetectApkeditorVersion);
+                    }
+                    else
+                        ToLog(ApktoolEventType.Error, Language.ErrorJavaDetect);
+                }
+                else
+                {
+                    ToLog(ApktoolEventType.Error, Language.ErrorJavaDetect);
+                    BeginInvoke(new MethodInvoker(delegate
+                    {
+                        tabPageMain.Enabled = false;
+                        tabPageBaksmali.Enabled = false;
+                        tabPageInstallFramework.Enabled = false;
+                    }));
+                }
+
+                InitializeAdb();
+
+                if (AdminUtils.IsAdministrator())
+                    ToLog(ApktoolEventType.Warning, Language.DragDropNotSupported);
+                else
+                    ToLog(ApktoolEventType.None, Language.DragDropSupported);
+
+                ToLog(ApktoolEventType.None, String.Format(Language.TempDirectory, Program.TEMP_PATH));
+
+                TimeSpan updateInterval = DateTime.Now - Settings.Default.LastUpdateCheck;
+                if (updateInterval.Days > 0 && Settings.Default.CheckForUpdateAtStartup)
+                    updateCheker.CheckAsync(true);
+            });
+            ToStatus(Language.Done, Resources.done);
+
+            RunCmdArgs();
+
+            await ListDevices();
+        }
+
         private async void clearTempFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Running(Language.ClearTempFolder);
@@ -1622,6 +1622,27 @@ namespace APKToolGUI
             {
                 Debug.WriteLine(ex);
                 ActionButtonsEnabled = true;
+            }
+        }
+        #endregion
+
+        #region Fix flickering
+
+        public static void SetDoubleBuffered(System.Windows.Forms.Control c)
+        {
+            if (System.Windows.Forms.SystemInformation.TerminalServerSession)
+                return;
+            System.Reflection.PropertyInfo aProp = typeof(System.Windows.Forms.Control).GetProperty("DoubleBuffered", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            aProp.SetValue(c, true, null);
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
             }
         }
         #endregion
