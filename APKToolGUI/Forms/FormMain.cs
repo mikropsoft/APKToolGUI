@@ -10,18 +10,12 @@ using APKToolGUI.Properties;
 using APKToolGUI.ApkTool;
 using APKToolGUI.Utils;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 using APKToolGUI.Handlers;
 using Microsoft.WindowsAPICodePack.Taskbar;
 using System.Media;
 using System.Linq;
-using System.Windows.Interop;
-using System.Security.Cryptography;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using APKToolGUI.Controls;
-using Dark.Net;
-using APKEasyTool;
-using System.IO.Compression;
+using Ionic.Zip;
 
 namespace APKToolGUI
 {
@@ -196,35 +190,35 @@ namespace APKToolGUI
                         {
                             Directory.CreateDirectory(splitPath);
 
-                            using (ZipArchive archive = ZipFile.OpenRead(file))
+                            using (ZipFile zipDest = ZipFile.Read(file))
                             {
                                 bool mainApkFound = false;
 
-                                foreach (ZipArchiveEntry entry in archive.Entries)
+                                foreach (ZipEntry entry in zipDest.Entries)
                                 {
-                                    if (!mainApkFound && !entry.FullName.Contains("config.") && entry.FullName.EndsWith(".apk"))
+                                    if (!mainApkFound && !entry.FileName.Contains("config.") && entry.FileName.EndsWith(".apk"))
                                     {
-                                        Debug.WriteLine("Found main APK: " + entry.FullName);
-                                        string extractPath = Path.Combine(splitPath, entry.FullName);
+                                        Debug.WriteLine("Found main APK: " + entry.FileName);
+                                        string extractPath = Path.Combine(splitPath, entry.FileName);
                                         Directory.CreateDirectory(Path.GetDirectoryName(extractPath));
-                                        entry.ExtractToFile(extractPath, true);
+                                        entry.Extract(splitPath, ExtractExistingFileAction.OverwriteSilently);
                                         file = extractPath;
                                         mainApkFound = true;
                                     }
 
-                                    if (entry.FullName.Contains("lib/armeabi-v7a"))
+                                    if (entry.FileName.Contains("lib/armeabi-v7a"))
                                     {
                                         arch += "armeabi-v7a, ";
                                     }
-                                    if (entry.FullName.Contains("lib/arm64-v8a"))
+                                    if (entry.FileName.Contains("lib/arm64-v8a"))
                                     {
                                         arch += "arm64-v8a, ";
                                     }
-                                    if (entry.FullName.Contains("lib/x86"))
+                                    if (entry.FileName.Contains("lib/x86"))
                                     {
                                         arch += "x86, ";
                                     }
-                                    if (entry.FullName.Contains("lib/x86_64"))
+                                    if (entry.FileName.Contains("lib/x86_64"))
                                     {
                                         arch += "x86_64, ";
                                     }
@@ -890,9 +884,9 @@ namespace APKToolGUI
                             if (Directory.Exists(Path.Combine(inputFolder, "original", "META-INF")))
                             {
                                 string unsignedApkPath = Path.Combine(Path.GetDirectoryName(outputCompiledApkFile), Path.GetFileName(outputUnsignedApk));
-                                ZipUtils.AddDirectory(outputFile, Path.Combine(inputFolder, "original", "META-INF"), "META-INF");
+                                ZipUtils.UpdateDirectory(outputFile, Path.Combine(inputFolder, "original", "META-INF"), "META-INF");
                                 if (File.Exists(Path.Combine(inputFolder, "original", "stamp-cert-sha256")))
-                                    ZipUtils.AddFile(outputFile, Path.Combine(inputFolder, "original", "stamp-cert-sha256"));
+                                    ZipUtils.UpdateFile(outputFile, Path.Combine(inputFolder, "original", "stamp-cert-sha256"));
                                 ToLog(ApktoolEventType.Infomation, String.Format(Language.CopyFileTo, outputFile, unsignedApkPath));
                                 File.Copy(outputFile, unsignedApkPath, true);
                             }
@@ -1627,7 +1621,6 @@ namespace APKToolGUI
         #endregion
 
         #region Fix flickering
-
         public static void SetDoubleBuffered(System.Windows.Forms.Control c)
         {
             if (System.Windows.Forms.SystemInformation.TerminalServerSession)

@@ -8,7 +8,7 @@ using System.Reflection;
 using Microsoft.WindowsAPICodePack.Shell;
 using APKToolGUI.Languages;
 
-namespace APKEasyTool
+namespace APKToolGUI
 {
     public class TaskBarJumpList
     {
